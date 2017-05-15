@@ -7,10 +7,5 @@
 	<classpathentry kind="lib" path="/Users/matthewdrake/Dropbox/Formula Basketabll Src Code/commons-lang3-3.5-test-sources.jar"/>
 	<classpathentry kind="lib" path="/Users/matthewdrake/Dropbox/Formula Basketabll Src Code/commons-lang3-3.5-tests.jar"/>
 	<classpathentry kind="lib" path="/Users/matthewdrake/Dropbox/Formula Basketabll Src Code/commons-lang3-3.5.jar"/>
-	<classpathentry kind="lib" path="B:/Downloads/commons-lang3-3.5-bin/commons-lang3-3.5/commons-lang3-3.5.jar"/>
-	<classpathentry kind="lib" path="B:/Downloads/commons-lang3-3.5-bin/commons-lang3-3.5/commons-lang3-3.5-javadoc.jar"/>
-	<classpathentry kind="lib" path="B:/Downloads/commons-lang3-3.5-bin/commons-lang3-3.5/commons-lang3-3.5-sources.jar"/>
-	<classpathentry kind="lib" path="B:/Downloads/commons-lang3-3.5-bin/commons-lang3-3.5/commons-lang3-3.5-tests.jar"/>
-	<classpathentry kind="lib" path="B:/Downloads/commons-lang3-3.5-bin/commons-lang3-3.5/commons-lang3-3.5-test-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

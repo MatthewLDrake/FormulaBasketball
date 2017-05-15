@@ -35,8 +35,10 @@ public class game
 
 		for(int i = 0; i<away.getSize();i++)
 		{
-			if(away.getPlayer(i).isPlaying())
+			away.getPlayer(i).setIsPlaying(false);
+			if(away.getPlayer(i).isStarter())
 			{
+				away.getPlayer(i).setIsPlaying(true);
 				if(away.getPlayer(i).getPosition() == 1)playingAwayTeam[0] = away.getPlayer(i);
 				else if(away.getPlayer(i).getPosition() == 2)playingAwayTeam[1] = away.getPlayer(i);
 				else if(away.getPlayer(i).getPosition() == 3)playingAwayTeam[2] = away.getPlayer(i);
@@ -48,8 +50,10 @@ public class game
 
 		for(int i = 0; i<home.getSize();i++)
 		{
-			if(home.getPlayer(i).isPlaying())
+			home.getPlayer(i).setIsPlaying(false);
+			if(home.getPlayer(i).isStarter())
 			{
+				home.getPlayer(i).setIsPlaying(true);
 				if(home.getPlayer(i).getPosition() == 1)playingHomeTeam[0] = home.getPlayer(i);
 				else if(home.getPlayer(i).getPosition() == 2)playingHomeTeam[1] = home.getPlayer(i);
 				else if(home.getPlayer(i).getPosition() == 3)playingHomeTeam[2] = home.getPlayer(i);
@@ -57,6 +61,8 @@ public class game
 				else if(home.getPlayer(i).getPosition() == 5)playingHomeTeam[4] = home.getPlayer(i);
 			}
 		}
+		playingAwayTeam = substitutions(playingAwayTeam, awayTeam, true, 1);
+		playingHomeTeam = substitutions(playingHomeTeam, homeTeam, false, 1);
 		awayTeamScore = 0;
 		homeTeamScore = 0;
 
@@ -253,6 +259,7 @@ public class game
 		player[] returnVal = playing;
 		for(int i  = 0; i<playing.length;i++)
 		{
+			
 			ArrayList<player> temp = new ArrayList<player>();
 			double tempHolder = 0; 
 			int newMember = 0;
@@ -263,7 +270,7 @@ public class game
 
 				for(int j = 0; j<fullTeam.getSize();j++)
 				{
-					if(playing[i].getPosition() == fullTeam.getPlayer(j).getPosition())
+					if(i+1 == fullTeam.getPlayer(j).getPosition())
 					{
 						if(fullTeam.getPlayer(j).isStarter() && !fullTeam.getPlayer(j).isInjured() && acceptableAmountOfFouls(fullTeam.getPlayer(j),quarterNum))
 						{
@@ -286,16 +293,16 @@ public class game
 					temp = new ArrayList<player>();
 					for(int j = 0; j<fullTeam.getSize();j++)
 					{
-						if(playing[i].getPosition() == fullTeam.getPlayer(j).getPosition() && fullTeam.getPlayer(j).isStarter())temp.add(fullTeam.getPlayer(j));
+						if(i+1 == fullTeam.getPlayer(j).getPosition() && fullTeam.getPlayer(j).isStarter())temp.add(fullTeam.getPlayer(j));
 					}
 				}
-				else
+				else if(!playing[i].isInjured())
 				{		   
 
 					temp = new ArrayList<player>();
 					for(int j = 0; j<fullTeam.getSize();j++)
 					{
-						if(playing[i].getPosition() == fullTeam.getPlayer(j).getPosition() && !fullTeam.getPlayer(j).isPlaying() && acceptableAmountOfFouls(fullTeam.getPlayer(j), quarterNum) && ! fullTeam.getPlayer(j).isInjured())
+						if(i+1 == fullTeam.getPlayer(j).getPosition() && !fullTeam.getPlayer(j).isPlaying() && acceptableAmountOfFouls(fullTeam.getPlayer(j), quarterNum) && ! fullTeam.getPlayer(j).isInjured())
 						{
 							temp.add(fullTeam.getPlayer(j));
 						}
@@ -322,17 +329,71 @@ public class game
 							tempHolder = relevantStats[j];
 						}
 					}
-				}
+				}				
+				else
+				{
+					temp = new ArrayList<player>();
+					for(int j = 0; j<fullTeam.getSize();j++)
+					{
+						if(playing[i].getPosition() == fullTeam.getPlayer(j).getPosition() && !fullTeam.getPlayer(j).isPlaying() && acceptableAmountOfFouls(fullTeam.getPlayer(j), 4) && ! fullTeam.getPlayer(j).isInjured())
+						{
+							temp.add(fullTeam.getPlayer(j));
+						}
+						
+					}
+					for(int j = 0; j < fullTeam.getSize(); j++)
+					{
+						if(temp.isEmpty())
+						{
+							if(!fullTeam.getPlayer(j).isPlaying() && acceptableAmountOfFouls(fullTeam.getPlayer(j), 4) && ! fullTeam.getPlayer(j).isInjured() && fullTeam.getPlayer(j).getStamina() > 70)
+							{
+								temp.add(fullTeam.getPlayer(j));
+							}
+						}
+					}
+					double[] relevantStats = new double[temp.size()];
+					for(int j = 0; j<temp.size();j++)
+					{
+						if((b && getWinner()) || (!b && !getWinner()))
+						{
+							relevantStats[j] = temp.get(j).getDefenseIQRating()+ temp.get(j).getShotContestRating();
+						}
+						else
+						{
+							relevantStats[j] = temp.get(j).getDunkRating()+temp.get(j).getJumpShotRating() + temp.get(j).getLayupRating();
+						}
 
+					}
+
+					for(int j = 0; j<temp.size();j++)
+					{
+						if(relevantStats[j] > tempHolder)
+						{
+							newMember = j;
+							tempHolder = relevantStats[j];
+						}
+					}
+				}
+				
 				if(!temp.isEmpty())
 				{
 					returnVal[i].setIsPlaying(false);
 					returnVal[i] = temp.get(newMember);
 					returnVal[i].setIsPlaying(true);
 				}
+				
 			}
 		}
-
+		for(int i  = 0; i<returnVal.length;i++)
+		{
+			if(returnVal[i].isInjured())
+			{
+				
+				System.out.println(returnVal[i].getName() + " is playing hurt tf");
+				System.exit(0);
+			}
+		}
+		
 		return returnVal;
 
 	}
