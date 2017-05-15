@@ -1,0 +1,34 @@
+-----------------------------------------------------------
+| Naskitrusk Brutes         | 4 | 16 | 11 | 6 | 0 | 37  |
+| Ma-PopÃ¡ Yiffs            | 25 | 24 | 16 | 22 | 0 | 87  |
+-----------------------------------------------------------
+Naskitrusk Brutes
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Danombi Chejijar         35    0    2    1    0    0.0    0    0    0   0    4    0   13   10    3    4   15    4   26.7
+SF Small Forward #155       48    0    0    1    0    0.0    0    0    0   0   41    1    0    0    0    0   20   12   60.0
+SG Litsaw Lek'at            42   23    0   16    9   56.3    6    2    3   3    1    0    2    1    1    3   15    7   46.7
+PF Power Forward #46        38    4    1    4    1   25.0    0    0    3   2    2    0    6    3    3    2   17    6   35.3
+PG Point Guard #132         40    0    1    3    0    0.0    1    0    0   0    3    1    8    7    1    0   10    4   40.0
+PG LeBroccoli James          7    0    1    0    0    0.0    0    0    0   0    0    0    4    2    2    0    1    0   0.0
+SG Shooting Guard #111       5    6    0    2    2   100.0    2    2    0   0    0    0    0    0    0    1    5    2   40.0
+C  Kuronuma Kiyohira        12    0    0    1    0    0.0    0    0    0   0    1    0    4    2    2    0    2    1   50.0
+SF Small Forward #71         0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Power Forward #127        0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Power Forward #107        9    4    1    2    1   50.0    0    0    2   2    0    0    1    1    0    0    3    0   0.0
+C  Center #124               0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PG Point Guard #78           0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+Ma-PopÃ¡ Yiffs
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Grant Pool               37   10    4   16    4   25.0    0    0    4   2    2    8    4    0    4    0    1    0   0.0
+SG Shooting Guard #14       36   19    5   15    5   33.3    5    0    8   6    1    7    4    0    4    1   11    9   81.8
+PG Point Guard #147         38    8    4   11    4   36.4    0    0    0   0    1   10    0    0    0    0    3    0   0.0
+PF Power Forward #152       36   13    4   18    6   33.3    0    0    2   1    0    7    8    2    6    3    6    2   33.3
+SF Small Forward #168        0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Shooting Guard #165      11    9    2    5    4   80.0    0    0    0   0    1    3    3    1    2    0    7    2   28.6
+SF Small Forward #112       32   18    2   12    8   66.7    0    0    0   0    3    3    4    2    2    0    1    0   0.0
+PG Keon Saysamongdy          9    0    3    0    0    0.0    0    0    0   0    0    2    2    0    2    0    0    0   0.0
+PF Power Forward #104        0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Center #149              10    2    5    1    1   100.0    0    0    0   0    0    0    0    0    0    0    1    0   0.0
+SF Small Forward #173       15    8    0    8    4   50.0    0    0    0   0    0    0    4    0    4    0    0    0   0.0
+C  Aseqa Fiqup               0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Power Forward #134       11    0    1    2    0    0.0    0    0    0   0    0    5    2    0    2    0    0    0   0.0

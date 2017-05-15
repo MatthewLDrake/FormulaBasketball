@@ -1,6 +1,5 @@
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -15,7 +14,7 @@ public class team implements Serializable, Comparable<team>
     private String teamName;
     private int[] playersPerPos;
     private int wins, pointsScored, pointsAgainst;
-    private int divisionRank, conferenceRank, leagueRank;
+    private int divisionRank, conferenceRank, leagueRank, teamNum;
     private Queue<Integer> lastGames;
     public team(String teamName)
     {
@@ -35,6 +34,10 @@ public class team implements Serializable, Comparable<team>
     public player getPlayer(int playerNum)
     {
 	return players.get(playerNum);
+    }
+    public void removePlayer(int playerNum)
+    {
+	players.remove(playerNum);
     }
     public ArrayList<player> getAllPlayer()
     {
@@ -180,32 +183,22 @@ public class team implements Serializable, Comparable<team>
     {
 	if(this.wins == otherTeam.getWins())
 	{
-		if(this.getPoints()-this.getPointsAgainst() == otherTeam.getPoints()-otherTeam.getPointsAgainst())
-		{
-		    if(this.getPoints() == otherTeam.getPoints())
-		    {
-		    	if(this.getPointsAgainst() == otherTeam.getPointsAgainst())return this.getTeamName().compareTo(otherTeam.getTeamName());
-		    	return otherTeam.getPointsAgainst()-this.getPointsAgainst();
-		    }
-		    return otherTeam.getPoints()-this.getPoints();
-		}
-	    return (this.getPoints()-this.getPointsAgainst()) - (otherTeam.getPoints()-otherTeam.getPointsAgainst());
+	    if(this.getPoints() == otherTeam.getPoints())
+	    {
+		if(this.getPointsAgainst() == otherTeam.getPointsAgainst())return this.getTeamName().compareTo(otherTeam.getTeamName());
+		return otherTeam.getPointsAgainst()-this.getPointsAgainst();
+	    }
+	    return otherTeam.getPoints()-this.getPoints();
 	}
 	return otherTeam.getWins()-this.wins;
     }
-	public void removePlayer(int playerNum)
-	{
-		players.remove(playerNum);
-		
-	}
-	public ArrayList<player> getPosition(int pos)
-	{
-		ArrayList<player> retVal = new ArrayList<player>();
-		for(int i = 0; i < players.size(); i++)
-		{
-			players.get(i).setTeam(this);
-			if(players.get(i).getPosition() == pos)retVal.add(players.get(i));
-		}
-		return retVal;
-	}
+    public void setTeamNum(int i)
+    {
+	teamNum = i;
+	
+    }
+    public int getTeamNum()
+    {
+	return teamNum;
+    }
 }
