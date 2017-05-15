@@ -226,8 +226,8 @@ public class game
 			int injury = r.nextInt(5000);
 			if(injury == 500)
 			{
+				playingAwayTeam[i].setInjured(true);
 				new Injury(playingAwayTeam[i]);
-				//System.out.println(playingAwayTeam[i].getName() + " is hurt");
 			}
 		}
 		for(int i = 0; i < playingHomeTeam.length; i++)
@@ -235,8 +235,8 @@ public class game
 			int injury = r.nextInt(5000);
 			if(injury == 500)
 			{
+				playingHomeTeam[i].setInjured(true);
 				new Injury(playingHomeTeam[i]);
-				//System.out.println(playingHomeTeam[i].getName() + " is hurt");
 			}
 		}
 		
@@ -272,11 +272,10 @@ public class game
 				}
 			}
 
-			if(playing[i].getStamina() < 65.0 || bob || !acceptableAmountOfFouls(playing[i],quarterNum))
+			if(playing[i].isInjured() || playing[i].getStamina() < 65.0 || bob || !acceptableAmountOfFouls(playing[i],quarterNum))
 			{
 				if(bob)
 				{
-					//System.out.println("bob fired");
 					temp = new ArrayList<player>();
 					for(int j = 0; j<fullTeam.getSize();j++)
 					{

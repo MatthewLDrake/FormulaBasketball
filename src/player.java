@@ -12,6 +12,8 @@ public class player implements Serializable, Comparable<player>
 	private int[] stats, gameStats;
 	private String name;
 	private team team;
+	private boolean isInjured;
+	private int injuryLength;
 	public player(int pos, int layupStat, int dunkStat, int jumpStat, int passing, int shotContest, int defenseIQ, int jumping, int seperation, int staminaRating, String first, String last, boolean starting)
 	{
 		setPosition(pos);
@@ -26,6 +28,8 @@ public class player implements Serializable, Comparable<player>
 		setStaminaRating(staminaRating);
 		isPlaying = starting;
 		isStarter = starting;
+		isInjured = false;
+		injuryLength = 0;
 		stamina = 100;
 		shootingModifier = 0.0;
 		otherModifier = 0.0; 
@@ -487,6 +491,24 @@ public class player implements Serializable, Comparable<player>
 	public team getTeam()
 	{
 		return team;
+	}
+	public int injuryLength()
+	{
+		return injuryLength;
+	}
+	public void setInjuryLength(int injuryLength)
+	{
+		this.injuryLength = injuryLength;
+	}
+	public boolean isInjured()
+	{
+		
+		return isInjured;
+	}
+	public void setInjured(boolean b)
+	{
+		
+		isInjured = b;
 	}
 }
 
