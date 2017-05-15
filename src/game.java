@@ -17,7 +17,14 @@ public class game
 		fourthQuarterScore = new int[]{0,0};
 		OTScore = new int[]{0,0};
 
-
+		for(int i = 0; i < away.getSize();i++)
+		{
+		    away.getPlayer(i).decrementDay();
+		}
+		for(int i = 0; i < home.getSize();i++)
+		{
+		    home.getPlayer(i).decrementDay();
+		}
 		awayTeam = away;
 		homeTeam = home;
 
@@ -114,14 +121,14 @@ public class game
 		for(int i = 0; i < awayTeam.getSize();i++)
 		{
 			awayTeam.getPlayer(i).changeStamina(20);
-			awayTeam.getPlayer(i).resetGameFouls();
-
+			awayTeam.getPlayer(i).resetGame();
+			
 
 		}
 		for(int i = 0; i < homeTeam.getSize();i++)
 		{
 			homeTeam.getPlayer(i).changeStamina(20);
-			homeTeam.getPlayer(i).resetGameFouls();
+			homeTeam.getPlayer(i).resetGame();
 		}
 
 	}
@@ -258,7 +265,7 @@ public class game
 				{
 					if(playing[i].getPosition() == fullTeam.getPlayer(j).getPosition())
 					{
-						if(fullTeam.getPlayer(j).isStarter())
+						if(fullTeam.getPlayer(j).isStarter() && !fullTeam.getPlayer(j).isInjured() && acceptableAmountOfFouls(fullTeam.getPlayer(j),quarterNum))
 						{
 
 							if(fullTeam.getPlayer(j).getStamina() > 90.0 && acceptableAmountOfFouls(fullTeam.getPlayer(j),quarterNum))
@@ -288,7 +295,7 @@ public class game
 					temp = new ArrayList<player>();
 					for(int j = 0; j<fullTeam.getSize();j++)
 					{
-						if(playing[i].getPosition() == fullTeam.getPlayer(j).getPosition() && !fullTeam.getPlayer(j).isPlaying() && acceptableAmountOfFouls(fullTeam.getPlayer(j), quarterNum))
+						if(playing[i].getPosition() == fullTeam.getPlayer(j).getPosition() && !fullTeam.getPlayer(j).isPlaying() && acceptableAmountOfFouls(fullTeam.getPlayer(j), quarterNum) && ! fullTeam.getPlayer(j).isInjured())
 						{
 							temp.add(fullTeam.getPlayer(j));
 						}

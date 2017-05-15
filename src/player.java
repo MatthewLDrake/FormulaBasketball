@@ -361,9 +361,10 @@ public class player implements Serializable, Comparable<player>
 	{
 		return stats[10];
 	}
-	public void resetGameFouls()
+	public void resetGame()
 	{
 		gameFouls = 0;
+		if(injuryLength == 0)isInjured = false;
 	}
 	public int getBoxScoreFouls()
 	{
@@ -509,6 +510,11 @@ public class player implements Serializable, Comparable<player>
 	{
 		
 		isInjured = b;
+	}
+	public void decrementDay()
+	{
+	    injuryLength--;
+	    
 	}
 }
 
