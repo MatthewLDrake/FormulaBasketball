@@ -1,0 +1,38 @@
+-----------------------------------------------------------
+| Dotruga Falno             | 29 | 30 | 24 | 17 | 0 | 100 |
+| Pxalit'k'a Pirates        | 19 | 20 | 29 | 10 | 0 | 78  |
+-----------------------------------------------------------
+Dotruga Falno
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Osiei Bituna              9    0    2    2    0    0.0    0    0    0   0    1    0    7    3    4    0    2    0   0.0
+SF Atakri Kalauni            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Bro McBeth                0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Lato Naixi                4    2    0    3    1   33.3    2    0    0   0    0    0    0    0    0    1    2    1   50.0
+PF Kapel Hilo                0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Vanhik Slivókŕámhomhók   43   17    4   17    7   41.2    7    3    0   0    0    0    3    2    1    2   22    8   36.4
+PG Danomobei Subeina         7    7    0    4    2   50.0    3    2    1   1    0    0    3    1    2    1    2    1   50.0
+SF Blaxanon Bonits          23    4    2    5    2   40.0    0    0    0   0    0    0    1    0    1    1    6    2   33.3
+PG Atobeino Tixom            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Atumobei Tute            42   18    8   22    9   40.9    0    0    0   0    3    0   14    7    7    4   11    4   36.4
+PF Dylan Fowler              5    2    1    1    1   100.0    0    0    0   0    0    0    1    0    1    1    4    1   25.0
+PG Paparto Subeina          40   22    7   16    9   56.3    6    4    0   0    1    0   13    3   10    4   17    8   47.1
+SF Nobira Nariaki           24   16    2   12    8   66.7    0    0    0   0    1    0    8    2    6    0    5    0   0.0
+SG Pakomha Nhoñsła           0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Gerard Holzer            38   12   11   19    6   31.6    0    0    2   0    2    0   16    3   13    2   14    9   64.3
+Pxalit'k'a Pirates
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Pxalit'k'a Player #3     38   14    6   12    7   58.3    0    0    0   0    1    2    9    1    8    2   15    5   33.3
+PF Pxalit'k'a Player #6     37    8    4   12    4   33.3    0    0    0   0    2    0    4    0    4    1   21   10   47.6
+SF Small Forward #143       27    3    4    8    1   12.5    3    0    0   0    0    0    6    4    2    4    8    4   50.0
+SG Akamine Naizen           13    9    2    9    4   44.4    1    0    0   0    0    0    0    0    0    0    4    2   50.0
+PG Venniti Flautika          0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PG Pxalit'k'a Player #2     25   11    4   10    5   50.0    3    0    0   0    0    0    4    1    3    1    8    5   62.5
+C  Pxalit'k'a Player #10     0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF Pxalit'k'a Player #11     1    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Pxalit'k'a Player #4     10    4    0    3    1   33.3    0    0    2   2    1    0    1    0    1    0    2    0   0.0
+PG Pxalit'k'a Player #7     22    8    3    9    4   44.4    0    0    0   0    1    0    3    0    3    1   12    6   50.0
+SG Pxalit'k'a Player #8     13    4    2    7    1   14.3    2    0    1   1    2    0    5    3    2    1    8    3   37.5
+SF Pxalit'k'a Player #9     19    2    1    3    1   33.3    0    0    0   0    0    0    4    0    4    3    9    6   66.7
+SG Swanano Nonhkwaqan       21   11    2    8    4   50.0    2    0    1   1    1    0    1    0    1    0    8    3   37.5
+C  Tansov Liksov             9    4    0    4    2   50.0    0    0    0   0    1    0    4    2    2    2    6    1   16.7
+PF Uxnax Prokexov            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0

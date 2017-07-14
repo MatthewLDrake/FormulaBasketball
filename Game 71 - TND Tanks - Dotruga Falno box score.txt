@@ -1,0 +1,39 @@
+-----------------------------------------------------------
+| TND Tanks                 | 16 | 31 | 21 | 30 | 0 | 98  |
+| Dotruga Falno             | 16 | 32 | 29 | 33 | 0 | 110 |
+-----------------------------------------------------------
+TND Tanks
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  TND Player #1            32   12    3   14    6   42.9    0    0    0   0    2    0    9    0    9    4   10    3   30.0
+PF TND Player #7            36    8    0    7    4   57.1    0    0    0   0    2    0    8    2    6    5   18   11   61.1
+SF Phetdum Vatthana         41   16   11   18    7   38.9    6    0    3   2    1    0    8    2    6    2   14    5   35.7
+SG TND Player #2            39   11    7   17    4   23.5    8    2    1   1    1    2    9    3    6    1   14   11   78.6
+PG TND Player #3            35   16    5   15    7   46.7    4    1    1   1    0    0    5    1    4    3   13    7   53.8
+C  Blanoxium Toxium         15    8    0    8    3   37.5    0    0    2   2    1    1    3    1    2    3    5    5   100.0
+PG Brodie Cropper            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Phetdum Phanivong         0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF TND Player #10            6    2    0    3    1   33.3    0    0    0   0    0    0    0    0    0    0    2    0   0.0
+PF TND Player #12           11   10    0    6    5   83.3    0    0    0   0    2    0    2    1    1    0    8    5   62.5
+C  TND Player #13            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF TND Player #5             0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG TND Player #6             8    6    2    3    1   33.3    1    1    3   3    0    1    0    0    0    0    5    1   20.0
+PG TND Player #8            12    9    1    6    3   50.0    4    2    1   1    0    0    1    1    0    0    2    0   0.0
+C  TND Player #9             0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Pwa Lefinu                0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+Dotruga Falno
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Osiei Bituna              6    4    1    2    2   100.0    0    0    0   0    0    0    1    1    0    1    3    0   0.0
+SF Atakri Kalauni            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Bro McBeth                0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Lato Naixi                3    0    1    2    0    0.0    1    0    0   0    1    0    1    1    0    0    1    0   0.0
+PF Kapel Hilo                5    0    1    1    0    0.0    0    0    0   0    0    0    1    1    0    0    1    0   0.0
+SG Vanhik Slivókŕámhomhók   44   29    5   17   12   70.6    1    0    0   0    4    0    4    2    2    4   19    5   26.3
+PG Danomobei Subeina        21   13    6    7    4   57.1    1    0    2   2    0    0    5    1    4    1    9    3   33.3
+SF Blaxanon Bonits          24    4    7    5    2   40.0    0    0    0   0    0    0    2    0    2    4   17    8   47.1
+PG Atobeino Tixom            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Atumobei Tute            42   32    5   25   16   64.0    0    0    0   0    1    1    7    5    2    4   12    9   75.0
+PF Dylan Fowler              0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PG Paparto Subeina          26    7    4    8    3   37.5    2    0    1   0    3    0    6    3    3    5   12    7   58.3
+SF Nobira Nariaki           23    7    2   11    3   27.3    0    0    2   1    0    0    7    2    5    0    4    0   0.0
+SG Pakomha Nhoñsła           0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Gerard Holzer            41   14    9   13    6   46.2    0    0    2   2    3    2   20    6   14    3   19    9   47.4

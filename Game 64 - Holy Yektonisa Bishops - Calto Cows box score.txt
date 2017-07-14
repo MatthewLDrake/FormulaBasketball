@@ -1,0 +1,38 @@
+-----------------------------------------------------------
+| Holy Yektonisa Bishops    | 8 | 24 | 26 | 32 | 0 | 90  |
+| Calto Cows                | 30 | 21 | 28 | 32 | 0 | 111 |
+-----------------------------------------------------------
+Holy Yektonisa Bishops
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Shitt Hessar             21    8    5   11    4   36.4    0    0    0   0    0    0   10    3    7    5   12    7   58.3
+PF Eban Korsobo             28    8    2   10    4   40.0    0    0    0   0    1    0    8    1    7    2    7    4   57.1
+SF apseŋ kép tónaqig         9    0    0    2    0    0.0    0    0    0   0    0    1    0    0    0    0    1    1   100.0
+SG Omumiba Ektxr            38   16    7   13    7   53.8    2    2    0   0    5    0    7    3    4    1   18   11   61.1
+PG Hivek Ekxtr              35   22    4   13    8   61.5    5    4    3   2    0    0    1    1    0    1   17    4   23.5
+SF Ailiqaeu Okohae          32    4    5   13    2   15.4    0    0    0   0    0    0    0    0    0    4   13    7   53.8
+C  Boltway Player #4        12   12    3    7    6   85.7    0    0    0   0    0    0    1    0    1    1    2    2   100.0
+PG Dano Subeina              0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Holy Yektonesia Player #125    8    1   12    4   33.3    0    0    0   0    3    0    8    3    5    4   10    7   70.0
+PF Holy Yektonesia Player #219    6    3    6    3   50.0    0    0    0   0    0    0    9    3    6    3   14    5   35.7
+SG Holy Yektonesia Player #3 0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Holy Yektonesia Player #6 9    6    3    2    2   100.0    1    1    1   1    1    0    1    1    0    0    4    3   75.0
+SF Holy Yektonesia Player #7 5    0    2    2    0    0.0    0    0    0   0    0    0    0    0    0    0    1    1   100.0
+SF Sagua Player #8           0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Stephen McBob             0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+Calto Cows
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Alukeili Asoertotrisei   35   22    7   16   11   68.8    0    0    0   0    2    1   14    5    9    5   20    7   35.0
+PF Trevor Oosterhout         0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF Asher Turner             36   16    6   11    8   72.7    0    0    0   0    2    0    6    4    2    2   12    2   16.7
+SG Selby Schneiders         33   28    4   19   12   63.2    6    0    0   0    0    2   10    2    8    1   11    6   54.5
+PG Michael Barnett          39    8    7   16    4   25.0    5    0    0   0    0    0    6    4    2    3   13    8   61.5
+C  Timblejoornay             2    2    0    2    1   50.0    0    0    0   0    0    1    0    0    0    1    2    1   50.0
+C  Chip Hancock              9    6    1    5    3   60.0    0    0    0   0    0    0    0    0    0    5    8    6   75.0
+PF Andries Martinez         16    8    2    6    4   66.7    0    0    0   0    0    0    3    3    0    4    8    4   50.0
+PF Uozumi Izo               31   10    6   15    5   33.3    0    0    0   0    1    0   10    1    9    0    8    3   37.5
+SF Dalton Ariesen           11    5    5    4    1   25.0    2    0    2   2    0    0    2    2    0    0    5    0   0.0
+SF guz                       0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Halsten Jöran             0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Yuguchi Sofu             14    4    4    3    2   66.7    0    0    0   0    0    1    0    0    0    1    4    3   75.0
+PG Iora Dani                 0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PG Sachie Snijder            8    2    1    2    1   50.0    0    0    0   0    0    0    2    0    2    0    0    0   0.0

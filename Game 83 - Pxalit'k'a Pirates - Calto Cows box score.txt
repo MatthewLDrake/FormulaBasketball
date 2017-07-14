@@ -1,0 +1,38 @@
+-----------------------------------------------------------
+| Pxalit'k'a Pirates        | 33 | 26 | 23 | 29 | 0 | 111 |
+| Calto Cows                | 31 | 22 | 25 | 25 | 0 | 103 |
+-----------------------------------------------------------
+Pxalit'k'a Pirates
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Pxalit'k'a Player #3     38    8    4   12    4   33.3    0    0    0   0    1    0    5    1    4    1   11    4   36.4
+PF Pxalit'k'a Player #6     37   20    5   16   10   62.5    0    0    0   0    2    0   11    3    8    1   17    9   52.9
+SF Small Forward #143       37   14    6   10    5   50.0    4    3    2   1    1    1    1    0    1    5   16    9   56.3
+SG Akamine Naizen           41   22    5   14    8   57.1    8    4    2   2    0    0   11    4    7    3   11    7   63.6
+PG Venniti Flautika         37   15    9   13    5   38.5    9    4    1   1    1    0    7    2    5    2   12    5   41.7
+PG Pxalit'k'a Player #2      0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Pxalit'k'a Player #10     9    0    2    5    0    0.0    0    0    0   0    0    0    4    0    4    0    1    0   0.0
+SF Pxalit'k'a Player #11     5    4    1    2    2   100.0    0    0    0   0    0    0    0    0    0    1    2    1   50.0
+PF Pxalit'k'a Player #4      0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PG Pxalit'k'a Player #7     10   17    3    9    6   66.7    6    4    1   1    0    0    2    2    0    2    7    2   28.6
+SG Pxalit'k'a Player #8      0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF Pxalit'k'a Player #9      5    0    1    2    0    0.0    0    0    0   0    0    0    1    1    0    1    5    3   60.0
+SG Swanano Nonhkwaqan        6    3    1    1    1   100.0    1    1    0   0    0    0    1    0    1    1    5    4   80.0
+C  Tansov Liksov             0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Uxnax Prokexov           10    8    2    7    4   57.1    0    0    0   0    1    0    2    0    2    1    3    1   33.3
+Calto Cows
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Alukeili Asoertotrisei   38    8   10    9    4   44.4    0    0    0   0    0    0   12    4    8    0   17    4   23.5
+PF Trevor Oosterhout        30   16    2   12    8   66.7    0    0    0   0    1    0    5    0    5    5   13    8   61.5
+SF Asher Turner             34   20    7   19   10   52.6    0    0    0   0    2    0    4    3    1    2    9    4   44.4
+SG Selby Schneiders         33   21    3   12    8   66.7    2    0    1   1    1    0    5    0    5    1    9    7   77.8
+PG Michael Barnett          40   15    7   16    6   37.5    6    0    1   1    0    1    8    3    5    1   15    7   46.7
+C  Timblejoornay             5    0    0    0    0    0.0    0    0    0   0    1    0    1    0    1    0    0    0   0.0
+C  Chip Hancock              4    0    0    3    0    0.0    0    0    2   0    0    0    1    0    1    0    0    0   0.0
+PF Andries Martinez          9    0    2    4    0    0.0    0    0    0   0    0    0    1    0    1    2    8    5   62.5
+PF Uozumi Izo                8    4    1    4    2   50.0    0    0    0   0    1    1    5    3    2    0    2    1   50.0
+SF Dalton Ariesen           13    9    3    4    3   75.0    0    0    3   0    0    0    1    0    1    3    5    3   60.0
+SF guz                       0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Halsten Jöran             0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Yuguchi Sofu             14    8    2    4    3   75.0    0    0    1   1    1    0    0    0    0    1    6    2   33.3
+PG Iora Dani                 7    2    2    3    1   33.3    0    0    0   0    0    0    3    1    2    1    7    4   57.1
+PG Sachie Snijder            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0

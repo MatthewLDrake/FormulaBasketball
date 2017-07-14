@@ -1,0 +1,39 @@
+-----------------------------------------------------------
+| Czalliso Pythons          | 21 | 28 | 21 | 38 | 0 | 108 |
+| Dotruga Falno             | 26 | 24 | 26 | 24 | 0 | 100 |
+-----------------------------------------------------------
+Czalliso Pythons
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Sagolnasei Korsobo       37    8    5   10    4   40.0    0    0    0   0    0    0   16    5   11    2    7    2   28.6
+PF tag                      28   13    6   13    6   46.2    0    0    2   1    0    0    6    2    4    5   14   10   71.4
+SF war                      32   18   10   13    9   69.2    0    0    0   0    0    1   10    4    6    4   15    4   26.7
+SG mu                       41   17    4   21    7   33.3    6    2    2   1    0    0    3    2    1    2   20   11   55.0
+PG Naxto Lizaxium           40   23    7   16    8   50.0   12    6    1   1    0    1    6    2    4    4   13    6   46.2
+C  fal                      10    0    2    2    0    0.0    0    0    0   0    0    0    4    1    3    1    3    1   33.3
+PG bon                       0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG panpek hana ševéŋkev      0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG hig                       6    4    0    4    2   50.0    0    0    0   0    0    0    1    0    1    0    1    1   100.0
+PF son                      14   10    0    9    5   55.6    0    0    0   0    1    0    3    0    3    1    9    5   55.6
+PF Holy Yektonesia Player #8 4    2    1    1    1   100.0    0    0    0   0    0    0    0    0    0    1    2    2   100.0
+C  luz                       0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF elp                      11    4    3    5    1   20.0    0    0    2   2    1    0    3    2    1    3    8    3   37.5
+PG yeb                       0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF Mónhin Nasa               3    4    0    4    1   25.0    2    1    1   1    0    0    0    0    0    0    0    0   0.0
+PG Matsuyama Tadashi         7    5    0    5    2   40.0    0    0    2   1    0    0    2    0    2    0    3    1   33.3
+Dotruga Falno
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Osiei Bituna             17    4    1    5    2   40.0    0    0    0   0    0    0    5    3    2    0    5    2   40.0
+SF Atakri Kalauni            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Bro McBeth               19    0    4    1    0    0.0    0    0    0   0    0    0    5    0    5    2    6    2   33.3
+SG Lato Naixi                5    2    0    1    1   100.0    0    0    0   0    0    0    1    1    0    0    2    1   50.0
+PF Kapel Hilo                5    8    1    6    4   66.7    0    0    0   0    0    0    3    2    1    0    4    2   50.0
+SG Vanhik Slivókŕámhomhók   42   27   10   20   11   55.0    1    0    1   1    1    0    6    3    3    3   23    8   34.8
+PG Danomobei Subeina         4    3    0    1    1   100.0    0    0    0   0    0    0    1    1    0    2    3    1   33.3
+SF Blaxanon Bonits          23    8    3   14    4   28.6    0    0    2   0    2    0    3    0    3    2   12    6   50.0
+PG Atobeino Tixom            2    0    1    2    0    0.0    0    0    0   0    0    0    0    0    0    0    2    1   50.0
+PF Atumobei Tute            42   26    6   19   13   68.4    0    0    0   0    0    1   15    5   10    3   19   10   52.6
+PF Dylan Fowler              0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PG Paparto Subeina          40   14    5   13    6   46.2    2    0    1   0    1    0    8    5    3    2   16    8   50.0
+SF Nobira Nariaki           24    6    7    9    3   33.3    0    0    0   0    1    0    3    1    2    3   10    5   50.0
+SG Pakomha Nhoñsła           0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Gerard Holzer            11    2    1    4    1   25.0    0    0    0   0    0    0    2    0    2    0    1    0   0.0

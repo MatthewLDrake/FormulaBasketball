@@ -14,7 +14,7 @@ public class team implements Serializable, Comparable<team>
     private String teamName;
     private int[] playersPerPos;
     private int wins, pointsScored, pointsAgainst;
-    private int divisionRank, conferenceRank, leagueRank, teamNum;
+    private int divisionRank, conferenceRank, leagueRank, teamNum, divisionWins, conferenceWins, divisionLosses, conferenceLosses;
     private Queue<Integer> lastGames;
     public team(String teamName)
     {
@@ -100,8 +100,24 @@ public class team implements Serializable, Comparable<team>
     }
     public int getWins()
     {
-	// TODO Auto-generated method stub
+	
 	return wins;
+    }
+    public void addDivisionWin(int i)
+    {
+	divisionWins = divisionWins+i;
+    }
+    public int getDivisionWins()
+    {
+	return divisionWins;
+    }
+    public void addConferenceWin(int i)
+    {
+	conferenceWins = conferenceWins+i;
+    }
+    public int getConferenceWins()
+    {
+	return conferenceWins;
     }
     public void addLoss(int i)
     {
@@ -110,8 +126,23 @@ public class team implements Serializable, Comparable<team>
     }
     public int getLosses()
     {
-	// TODO Auto-generated method stub
 	return losses;
+    }
+    public void addDivisionLoss(int i)
+    {
+	divisionLosses = divisionLosses+i;
+    }
+    public int getDivisionLosses()
+    {
+	return divisionLosses;
+    }
+    public void addConferenceLoss(int i)
+    {
+	conferenceLosses = conferenceLosses+i;
+    }
+    public int getConferenceLosses()
+    {
+	return conferenceLosses;
     }
     /*
      * return codes:
@@ -183,12 +214,12 @@ public class team implements Serializable, Comparable<team>
     {
 	if(this.wins == otherTeam.getWins())
 	{
-	    if(this.getPoints() == otherTeam.getPoints())
+	    if(this.getPoints()-this.getPointsAgainst() == otherTeam.getPoints()-otherTeam.getPointsAgainst())
 	    {
-		if(this.getPointsAgainst() == otherTeam.getPointsAgainst())return this.getTeamName().compareTo(otherTeam.getTeamName());
-		return otherTeam.getPointsAgainst()-this.getPointsAgainst();
+		if(this.getPoints() == otherTeam.getPoints())return this.getTeamName().compareTo(otherTeam.getTeamName());
+		return otherTeam.getPoints()-this.getPoints();
 	    }
-	    return otherTeam.getPoints()-this.getPoints();
+	    return (otherTeam.getPoints()-otherTeam.getPointsAgainst()) - (this.getPoints()-this.getPointsAgainst());
 	}
 	return otherTeam.getWins()-this.wins;
     }
@@ -200,5 +231,23 @@ public class team implements Serializable, Comparable<team>
     public int getTeamNum()
     {
 	return teamNum;
+    }
+    public void addModifier(Modifier modifier)
+    {
+	for(int i = 0; i < players.size();i++)
+	{
+	    players.get(i).addShootingModifier(modifier.getShootingModifier());
+	    players.get(i).addDefensiveModifier(modifier.getDefenseModifier());
+	    players.get(i).addOtherModifier(modifier.getOtherModifier());
+	}
+	
+    }
+    public int getDivision()
+    {
+	if(teamNum < 8)return 1;
+	else if (teamNum < 16)return 2;
+	else if(teamNum < 24)return 3;
+	else return 4;
+	    
     }
 }

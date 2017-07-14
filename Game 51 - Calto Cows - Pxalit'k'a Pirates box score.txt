@@ -1,0 +1,38 @@
+-----------------------------------------------------------
+| Calto Cows                | 36 | 35 | 25 | 31 | 0 | 127 |
+| Pxalit'k'a Pirates        | 35 | 18 | 24 | 27 | 0 | 104 |
+-----------------------------------------------------------
+Calto Cows
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Alukeili Asoertotrisei   38   10   14   13    5   38.5    0    0    0   0    2    0   14    4   10    1   14    8   57.1
+PF Trevor Oosterhout        37   16    6   15    8   53.3    0    0    0   0    1    0   14    5    9    4   11    5   45.5
+SF Asher Turner             37   22    6   23   11   47.8    0    0    0   0    1    1   12    5    7    3    5    5   100.0
+SG Selby Schneiders         30   17    6   13    7   53.8    5    2    1   1    0    1    4    1    3    4   19   10   52.6
+PG Michael Barnett          26   17    3    9    7   77.8    4    3    0   0    0    0    3    1    2    5   13    8   61.5
+C  Timblejoornay             0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Chip Hancock              9    5    1    3    1   33.3    0    0    4   3    0    0    2    1    1    1    6    1   16.7
+PF Andries Martinez         10    4    0    5    2   40.0    0    0    0   0    0    0    1    1    0    1    3    2   66.7
+PF Uozumi Izo                0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF Dalton Ariesen           10    8    1    7    3   42.9    4    1    1   1    0    0    3    1    2    1    4    2   50.0
+SF guz                       0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Halsten Jöran             0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Yuguchi Sofu             17   13    4    5    5   100.0    2    2    1   1    1    0    2    1    1    0    6    4   66.7
+PG Iora Dani                 1    2    0    1    1   100.0    0    0    0   0    0    0    1    1    0    0    0    0   0.0
+PG Sachie Snijder           20   13    3   11    5   45.5    3    2    1   1    0    0    3    1    2    2    7    1   14.3
+Pxalit'k'a Pirates
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Pxalit'k'a Player #3     36   14    2   12    7   58.3    0    0    0   0    0    1    4    2    2    2   13    5   38.5
+PF Pxalit'k'a Player #6     37    8    7   11    4   36.4    0    0    0   0    0    0    7    4    3    1   17   10   58.8
+SF Small Forward #143       26    6    7    5    3   60.0    0    0    0   0    1    0    1    0    1    5   16    8   50.0
+SG Akamine Naizen           38   27    4   19   11   57.9    4    0    1   0    2    0    8    4    4    3   13    9   69.2
+PG Venniti Flautika          0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PG Pxalit'k'a Player #2     20   13    1   11    4   36.4    1    0    6   4    1    0    4    1    3    1    8    3   37.5
+C  Pxalit'k'a Player #10     0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF Pxalit'k'a Player #11     0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Pxalit'k'a Player #4     10    6    2    3    3   100.0    0    0    0   0    0    0    2    1    1    0    3    0   0.0
+PG Pxalit'k'a Player #7     27   11    6    9    5   55.6    0    0    0   0    0    0    1    0    1    3   13   10   76.9
+SG Pxalit'k'a Player #8      0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF Pxalit'k'a Player #9     21    8    3    4    4   100.0    0    0    0   0    1    0    1    0    1    2   14    6   42.9
+SG Swanano Nonhkwaqan        9    6    2    6    3   50.0    2    0    0   0    0    0    2    1    1    2    5    3   60.0
+C  Tansov Liksov            11    5    0    8    2   25.0    0    0    2   1    0    0    3    0    3    2    3    1   33.3
+PF Uxnax Prokexov            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0

@@ -1,0 +1,38 @@
+-----------------------------------------------------------
+| Calto Cows                | 33 | 24 | 27 | 30 | 0 | 114 |
+| Serkr Atolls              | 23 | 19 | 18 | 28 | 0 | 88  |
+-----------------------------------------------------------
+Calto Cows
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Alukeili Asoertotrisei   37   12    7   12    6   50.0    0    0    0   0    0    1   13    6    7    0   13    4   30.8
+PF Trevor Oosterhout        34   12   11    7    6   85.7    0    0    0   0    4    1   17    9    8    3   17    8   47.1
+SF Asher Turner             38   20    7   17   10   58.8    0    0    0   0    1    0   13    5    8    3   12    6   50.0
+SG Selby Schneiders         37   13    9   12    5   41.7    4    2    1   1    0    1    4    1    3    1   17    8   47.1
+PG Michael Barnett          38   22    5   19    9   47.4    5    2    2   2    6    1    5    3    2    2   19    3   15.8
+C  Timblejoornay             0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Chip Hancock             10    2    1    5    1   20.0    0    0    0   0    0    0    4    0    4    1    6    3   50.0
+PF Andries Martinez          2    2    0    1    1   100.0    0    0    0   0    0    0    0    0    0    1    2    1   50.0
+PF Uozumi Izo               10    8    1    5    4   80.0    0    0    0   0    0    0    3    2    1    0    2    1   50.0
+SF Dalton Ariesen            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF guz                       9   12    2    8    6   75.0    0    0    0   0    1    0    1    1    0    0    5    1   20.0
+SG Halsten Jöran             0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Yuguchi Sofu             10    2    0    2    1   50.0    0    0    0   0    0    0    1    0    1    1    7    4   57.1
+PG Iora Dani                 0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PG Sachie Snijder            9    9    0    5    4   80.0    1    1    0   0    0    0    1    1    0    0    0    0   0.0
+Serkr Atolls
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Atotra Bexek             36   12    1   16    6   37.5    0    0    0   0    0    0    5    0    5    2   16    6   37.5
+PF Moke Douangvily          27   18    7   11    7   63.6    1    0    0   0    1    0    2    0    2    5   10    9   90.0
+SF K'ita Senako             38   12    3   14    6   42.9    0    0    0   0    0    0    6    0    6    1   22   13   59.1
+SG Niko Stengel             36   20    5   17    9   52.9    3    0    0   0    1    0    6    1    5    1   10    4   40.0
+PG pekleɰ tiwan             30    7    6   17    2   11.8    5    0    3   3    0    0    8    3    5    5   14    8   57.1
+C  Able                     11    2    4    3    1   33.3    0    0    0   0    1    0    5    1    4    0    1    1   100.0
+PG Hoeki Ulepa               0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Lekai Modoki              0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF Munglegarra               9    2    3    3    1   33.3    0    0    0   0    0    0    3    0    3    1    3    3   100.0
+SG Nupa Auprat              11    6    2    7    3   42.9    0    0    0   0    0    0    2    1    1    1    4    2   50.0
+SF Pergo Elomosei            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Pŋševa Ke'una             0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Pwot'e Lanakwi           20    6    1   10    3   30.0    0    0    0   0    0    1    0    0    0    0    3    2   66.7
+PF Tesine Falei              0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PG Zaxox Pasovya            17    3    3    2    1   50.0    1    0    0   0    1    1    2    0    2    3   10    5   50.0

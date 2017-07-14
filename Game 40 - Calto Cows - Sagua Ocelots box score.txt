@@ -1,0 +1,37 @@
+-----------------------------------------------------------
+| Calto Cows                | 28 | 29 | 22 | 29 | 0 | 108 |
+| Sagua Ocelots             | 21 | 22 | 15 | 33 | 0 | 91  |
+-----------------------------------------------------------
+Calto Cows
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Alukeili Asoertotrisei   37   14    5   12    7   58.3    0    0    0   0    2    0   22   10   12    1    8    2   25.0
+PF Trevor Oosterhout        33   12    2   12    6   50.0    0    0    0   0    1    1    8    4    4    4   11    3   27.3
+SF Asher Turner             27   14    6   15    7   46.7    0    0    0   0    0    0    4    2    2    5   18    6   33.3
+SG Selby Schneiders         34   23    3   16    9   56.3    7    3    2   2    1    0    4    1    3    1    8    3   37.5
+PG Michael Barnett          34   14    6    9    7   77.8    0    0    0   0    2    0    5    2    3    5   19    6   31.6
+C  Timblejoornay             0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Chip Hancock             10    2    1    1    1   100.0    0    0    0   0    1    0    5    2    3    1    2    1   50.0
+PF Andries Martinez         14    6    2    7    3   42.9    0    0    0   0    0    0    2    0    2    0    5    0   0.0
+PF Uozumi Izo                0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF Dalton Ariesen            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF guz                      20   12    5    9    6   66.7    0    0    0   0    0    0    1    0    1    3    9    5   55.6
+SG Halsten Jöran             0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Yuguchi Sofu             13    5    0    5    2   40.0    3    1    0   0    2    0    2    2    0    1    7    4   57.1
+PG Iora Dani                 0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PG Sachie Snijder           13    6    5    8    3   37.5    2    0    0   0    1    0    4    1    3    2    7    5   71.4
+Sagua Ocelots
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Sagua Player #1          24    4    6    4    2   50.0    0    0    0   0    0    0    4    1    3    4    8    5   62.5
+PF Mawatari Kane            42    7    7   14    3   21.4    0    0    4   1    5    1   12    4    8    2   17    7   41.2
+SF Sagua Player #4          23   16    3   12    7   58.3    2    0    0   0    1    0    3    2    1    5   14    6   42.9
+SG Sagua Player #2           0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PG Keahi Siyavong            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Biplatza Bitsekzeba       5    0    0    2    0    0.0    0    0    0   0    0    0    2    0    2    1    2    2   100.0
+C  Biplatza Ifet             0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PG Holy Yektonesia Player #510    0    2    2    0    0.0    0    0    0   0    0    1    2    0    2    0    1    1   100.0
+SF Neville Spicer           24   15    4   15    4   26.7    3    0    6   6    0    0    1    0    1    2   10    7   70.0
+C  Sagua Player #10         23    2    0    6    1   16.7    0    0    0   0    0    0   11    1   10    0    5    3   60.0
+SG Sagua Player #11         41   16    4   13    7   53.8    1    0    1   1    3    1    3    1    2    3   21   11   52.4
+PG Sagua Player #3          24   24    1   17    8   47.1    4    0    3   3    1    0    6    1    5    3   10    7   70.0
+PG Sagua Player #6          13    7    2    7    3   42.9    0    0    0   0    1    1    0    0    0    0    6    2   33.3
+SG Sagua Player #9           6    0    0    2    0    0.0    0    0    0   0    0    0    1    0    1    0    0    0   0.0

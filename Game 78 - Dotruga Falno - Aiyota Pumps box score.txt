@@ -1,0 +1,39 @@
+-----------------------------------------------------------
+| Dotruga Falno             | 17 | 30 | 28 | 26 | 0 | 101 |
+| Aiyota Pumps              | 21 | 20 | 10 | 31 | 0 | 82  |
+-----------------------------------------------------------
+Dotruga Falno
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Osiei Bituna              4    2    0    3    1   33.3    0    0    0   0    0    0    3    2    1    1    1    0   0.0
+SF Atakri Kalauni            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Bro McBeth                0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Lato Naixi                7    0    1    1    0    0.0    1    0    0   0    0    0    2    0    2    0    1    0   0.0
+PF Kapel Hilo                0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Vanhik Slivókŕámhomhók   41   23    3   21    9   42.9   11    4    1   1    0    0    1    1    0    1    7    3   42.9
+PG Danomobei Subeina         9    6    1    3    2   66.7    3    2    1   0    0    0    3    0    3    1    4    2   50.0
+SF Blaxanon Bonits           8    2    3    2    1   50.0    0    0    0   0    0    0    0    0    0    4    8    4   50.0
+PG Atobeino Tixom            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Atumobei Tute            35   22    6   13   11   84.6    0    0    0   0    2    1   17    4   13    3   16    5   31.3
+PF Dylan Fowler             12    6    3    7    3   42.9    0    0    0   0    0    0    4    1    3    1    3    1   33.3
+PG Paparto Subeina          38   22    3   20    8   40.0   11    4    3   2    3    0    5    1    4    3   14    7   50.0
+SF Nobira Nariaki           39   16    7   21    8   38.1    0    0    0   0    2    1   19    7   12    4    8    4   50.0
+SG Pakomha Nhoñsła           0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Gerard Holzer            43    2   10   10    1   10.0    0    0    2   0    2    0   16    5   11    1   19    8   42.1
+Aiyota Pumps
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Kardo Cows               37   12    3   17    6   35.3    0    0    2   0    0    0    5    0    5    1   11    1   9.1
+PF Hevek Gagomos             0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF Aiyota Player #5          0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Aiyota Player #3         38    5    5    5    2   40.0    0    0    0   0    0    0    6    2    4    1   16    5   31.3
+PG Aiyota Player #2         34   13    4   11    5   45.5    2    0    1   1    1    0    0    0    0    5   16    8   50.0
+C  Aiyota Player #1          0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Aiyota Player #10        17    4    1   11    2   18.2    0    0    0   0    0    1    4    2    2    1    3    3   100.0
+SG Aiyota Player #12         5    0    2    1    0    0.0    0    0    0   0    0    0    1    1    0    0    5    3   60.0
+PF Aiyota Player #4         27    8    1    8    4   50.0    0    0    0   0    5    0    6    0    6    2   13    9   69.2
+SF Aiyota Player #6         29   15    3   11    6   54.5    2    0    2   1    0    0    1    0    1    0   14    4   28.6
+PG Aiyota Player #7         13   13    0    7    4   57.1    2    0    2   2    1    0    1    0    1    1    7    2   28.6
+C  Aiyota Player #8          0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Aiyota Player #9          4    3    2    2    1   50.0    1    0    0   0    0    0    1    0    1    0    1    1   100.0
+PF Amari Yakumo              2    0    1    0    0    0.0    0    0    0   0    0    0    0    0    0    0    4    2   50.0
+SF Small Forward #159       18    5    6    5    2   40.0    0    0    2   1    0    1    5    1    4    0    9    5   55.6
+C  Watsuji Isei             10    4    1    3    2   66.7    0    0    0   0    0    1    4    2    2    1    2    1   50.0

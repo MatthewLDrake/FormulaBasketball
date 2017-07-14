@@ -2,12 +2,13 @@ import java.io.Serializable;
 
 public class player implements Serializable, Comparable<player>
 {
+    //TODO: Add games
     /**
      * 
      */
     private static final long serialVersionUID = 1L;
     private boolean isPlaying, isStarter;
-    private int position, layupRating, dunkRating, jumpRating, shotContestRating, defenseIQRating, jumpingRating, seperation, passing, staminaRating, gameFouls;
+    private int position, layupRating, dunkRating, jumpRating, shotContestRating, defenseIQRating, jumpingRating, seperation, passing, staminaRating, threeRating, gameFouls, durability, injuryTotal;
     private double stamina, shootingModifier, otherModifier, defensiveModifier ;
     private int[] stats, gameStats;
     private String name;
@@ -20,6 +21,7 @@ public class player implements Serializable, Comparable<player>
 	setLayupRating(layupStat);
 	setDunkRating(dunkStat);
 	setJumpShotRating(jumpStat);
+	
 	setShotContestRating(shotContest);
 	setDefenseIQRating(defenseIQ);
 	setJumpingRating(jumping);
@@ -28,8 +30,6 @@ public class player implements Serializable, Comparable<player>
 	setStaminaRating(staminaRating);
 	isPlaying = starting;
 	isStarter = starting;
-	isInjured = false;
-	injuryLength = 0;
 	stamina = 100;
 	shootingModifier = 0.0;
 	otherModifier = 0.0; 
@@ -39,12 +39,14 @@ public class player implements Serializable, Comparable<player>
 	gameFouls = 0;
 	name = first + " " + last;
     }
-    public player(int pos, int layupStat, int dunkStat, int jumpStat, int passing, int shotContest, int defenseIQ, int jumping, int seperation, int staminaRating, String string, boolean starting)
+    public player(int pos, int layupStat, int dunkStat, int jumpStat,int threePoint, int passing, int shotContest, int defenseIQ, int jumping, int seperation,int durability, int staminaRating, String string, boolean starting)
     {
 	setPosition(pos);
 	setLayupRating(layupStat);
 	setDunkRating(dunkStat);
 	setJumpShotRating(jumpStat);
+	setThreeShotRating(threePoint);
+	setDurabilityRating(durability);
 	setShotContestRating(shotContest);
 	setDefenseIQRating(defenseIQ);
 	setJumpingRating(jumping);
@@ -493,7 +495,7 @@ public class player implements Serializable, Comparable<player>
     {
 	return team;
     }
-    public int injuryLength()
+    public int getInjuryLength()
     {
 	return injuryLength;
     }
@@ -508,8 +510,12 @@ public class player implements Serializable, Comparable<player>
     }
     public void setInjured(boolean b)
     {
-
+	injuryTotal++;
 	isInjured = b;
+    }
+    public int getInjuryTotal()
+    {
+	return injuryTotal;
     }
     public void decrementDay()
     {
@@ -519,6 +525,36 @@ public class player implements Serializable, Comparable<player>
     public void resetAllStats()
     {
 	stats = new int[]{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    }
+    public void addShootingModifier(double d)
+    {
+	this.shootingModifier += d;
+    }
+    public void addDefensiveModifier(double defenseModifier)
+    {
+	this.defensiveModifier += defenseModifier;
+	
+    }
+    public void addOtherModifier(double otherModifier)
+    {
+	this.otherModifier += otherModifier;
+	
+    }
+    public double getThreeShotRating()
+    {
+	return (threeRating+shootingModifier)*getStamina()/100;
+    }
+    private void setThreeShotRating(int threeRating)
+    {
+	this.threeRating = threeRating;
+    }
+    public int getDurabilityRating()
+    {
+	return durability;
+    }
+    private void setDurabilityRating(int durability)
+    {
+	this.durability = durability;
     }
 }
 

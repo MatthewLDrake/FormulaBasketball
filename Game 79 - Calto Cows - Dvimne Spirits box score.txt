@@ -1,0 +1,38 @@
+-----------------------------------------------------------
+| Calto Cows                | 28 | 24 | 38 | 24 | 0 | 114 |
+| Dvimne Spirits            | 27 | 26 | 19 | 26 | 0 | 98  |
+-----------------------------------------------------------
+Calto Cows
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Alukeili Asoertotrisei   37   12    9   12    6   50.0    0    0    0   0    0    0   16    6   10    4   18    8   44.4
+PF Trevor Oosterhout        42   18    7   12    9   75.0    0    0    0   0    1    0    6    1    5    1   15    7   46.7
+SF Asher Turner             38   18    6   18    9   50.0    0    0    0   0    1    0   14    8    6    3   12    5   41.7
+SG Selby Schneiders         33   19    5   18    7   38.9    7    3    2   2    1    0    3    0    3    2   23    9   39.1
+PG Michael Barnett          41   19    8   13    7   53.8    6    3    2   2    1    0    4    1    3    2   21    9   42.9
+C  Timblejoornay             5    2    1    1    1   100.0    0    0    0   0    1    0    2    1    1    0    0    0   0.0
+C  Chip Hancock              5    0    0    3    0    0.0    0    0    0   0    0    0    2    0    2    1    3    1   33.3
+PF Andries Martinez          5    4    2    2    2   100.0    0    0    0   0    0    0    0    0    0    1    1    1   100.0
+PF Uozumi Izo                0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF Dalton Ariesen            9   10    2    6    4   66.7    2    1    1   1    0    0    5    2    3    2    4    3   75.0
+SF guz                       0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Halsten Jöran             0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Yuguchi Sofu             14    5    4    7    2   28.6    3    1    0   0    0    0    0    0    0    0    3    1   33.3
+PG Iora Dani                 5    4    0    3    1   33.3    0    0    2   2    0    1    1    1    0    0    0    0   0.0
+PG Sachie Snijder            1    3    0    1    1   100.0    1    1    0   0    0    0    0    0    0    0    0    0   0.0
+Dvimne Spirits
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  vo                       39   16    6   18    8   44.4    0    0    0   0    0    0    8    3    5    3   14    6   42.9
+PF Height Sagua Player #1   42   14    6   15    7   46.7    0    0    0   0    1    1   14    7    7    2   11    8   72.7
+SF Dvinme Player #3         28   17    2   12    7   58.3    5    0    1   0    0    0    0    0    0    5   16    9   56.3
+SG kuŋevok eɰnak gevunáh    24   10    6   12    4   33.3    5    0    1   1    1    0    4    0    4    4   13    5   38.5
+PG Aahrus Player #11        29   11    6   15    5   33.3    7    0    0   0    0    0    9    1    8    5    9    5   55.6
+C  Dvinme Player #1          0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PG Benben                   18    9    4    6    4   66.7    0    0    0   0    2    0    7    1    6    1    8    4   50.0
+PF Dvinme Player #2          5    2    0    1    1   100.0    0    0    0   0    0    0    2    0    2    2    3    3   100.0
+SG Dvinme Player #4         12   10    1    7    4   57.1    1    0    0   0    0    0    1    0    1    2    6    2   33.3
+C  Dvinme Player #5          8    2    1    3    1   33.3    0    0    0   0    0    1    2    2    0    0    2    1   50.0
+SF Dvinme Player #6          0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Dvinme Player #8          0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF Pxalit'k'a Player #5     19    2    4    4    1   25.0    0    0    0   0    0    0    1    0    1    3    8    4   50.0
+PG Point Guard #40           0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Shooting Guard #105      11    5    0    7    2   28.6    2    0    0   0    0    1    2    0    2    0    6    2   33.3

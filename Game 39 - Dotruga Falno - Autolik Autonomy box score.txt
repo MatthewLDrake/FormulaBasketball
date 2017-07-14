@@ -1,0 +1,38 @@
+-----------------------------------------------------------
+| Dotruga Falno             | 33 | 24 | 25 | 35 | 0 | 117 |
+| Autolik Autonomy          | 26 | 19 | 23 | 27 | 0 | 95  |
+-----------------------------------------------------------
+Dotruga Falno
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Osiei Bituna             14    6    1    5    3   60.0    0    0    0   0    0    0    6    1    5    5    7    3   42.9
+SF Atakri Kalauni           26   15   10    9    7   77.8    1    1    0   0    1    0    7    5    2    5   10    5   50.0
+C  Bro McBeth               23    8    4    6    4   66.7    0    0    0   0    1    0    7    3    4    5   13    6   46.2
+SG Lato Naixi               18    8    7    8    3   37.5    4    2    0   0    2    1    5    2    3    1    5    2   40.0
+PF Kapel Hilo                3    4    0    3    2   66.7    0    0    0   0    0    0    1    0    1    1    2    1   50.0
+SG Vanhik Slivókŕámhomhók   29   21    4   14    9   64.3    6    3    0   0    1    0    2    1    1    5   14    5   35.7
+PG Danomobei Subeina         8    9    1    4    3   75.0    2    2    1   1    0    0    0    0    0    1    2    1   50.0
+SF Blaxanon Bonits          18    4    2    7    2   28.6    0    0    0   0    2    0    0    0    0    5    8    6   75.0
+PG Atobeino Tixom            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Atumobei Tute            43   16    6   14    8   57.1    0    0    0   0    1    1   17    7   10    1   12    4   33.3
+PF Dylan Fowler              4    2    1    2    1   50.0    0    0    0   0    0    0    2    0    2    0    1    0   0.0
+PG Paparto Subeina          39   20   12   14    8   57.1    8    4    0   0    0    0    2    1    1    4   19    9   47.4
+SF Nobira Nariaki            9    4    2    6    2   33.3    0    0    0   0    1    0    3    2    1    1    4    1   25.0
+SG Pakomha Nhoñsła           0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Gerard Holzer             0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+Autolik Autonomy
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Boolway                  35   16    7   17    7   41.2    0    0    4   2    1    0   12    0   12    3    7    6   85.7
+PF Autolik Player #1        15    2    0    3    1   33.3    0    0    0   0    0    0    1    0    1    1    4    3   75.0
+SF Autolik Player #4        37   22    4   18   11   61.1    0    0    2   0    2    1    7    2    5    1   18    9   50.0
+SG Keoki Vongsay            36   15   10   15    6   40.0    5    0    5   1    1    2   10    5    5    0   19   10   52.6
+PG enoikh apéka zeilun      40   22    7   20    9   45.0    4    0    1   0    0    0    7    1    6    3   15    9   60.0
+SF Autolik Player #10        0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Autolik Player #11       14    4    0    4    2   50.0    0    0    0   0    1    0    1    1    0    0    5    3   60.0
+PG Autolik Player #3         0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Autolik Player #5        12    6    0    6    3   50.0    0    0    0   0    1    0    2    1    1    0    4    1   25.0
+C  Autolik Player #7         0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Autolik Player #8        11    2    3    4    1   25.0    0    0    0   0    1    0    1    0    1    0    3    2   66.7
+SF Greg Kershaw             10    2    0    3    1   33.3    0    0    0   0    0    0    0    0    0    0    4    2   50.0
+PG Kamil Harris              7    2    2    1    1   100.0    0    0    0   0    0    0    0    0    0    0    3    2   66.7
+SG Mornay                    0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF William Fudge            17    2    1    6    1   16.7    0    0    0   0    1    0    1    0    1    1   10    5   50.0

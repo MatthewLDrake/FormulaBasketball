@@ -1,0 +1,38 @@
+-----------------------------------------------------------
+| Dotruga Falno             | 27 | 26 | 35 | 26 | 0 | 114 |
+| Serkr Atolls              | 23 | 18 | 16 | 24 | 0 | 81  |
+-----------------------------------------------------------
+Dotruga Falno
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Osiei Bituna              7    6    3    3    3   100.0    0    0    0   0    0    0    1    1    0    0    4    0   0.0
+SF Atakri Kalauni           42   19    9   16    7   43.8    9    5    0   0    0    0   13    4    9    4   19    4   21.1
+C  Bro McBeth                0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Lato Naixi                5    0    3    0    0    0.0    0    0    0   0    0    0    0    0    0    1    5    2   40.0
+PF Kapel Hilo                0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Vanhik Slivókŕámhomhók   42   30    5   25   13   52.0    8    1    3   3    2    0    8    1    7    2   14    7   50.0
+PG Danomobei Subeina        10    0    1    3    0    0.0    2    0    0   0    1    0    2    1    1    2    3    1   33.3
+SF Blaxanon Bonits           5    2    2    2    1   50.0    0    0    0   0    0    0    0    0    0    0    1    0   0.0
+PG Atobeino Tixom            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Atumobei Tute            35   16    5   10    8   80.0    0    0    0   0    0    0   21   11   10    5   15    5   33.3
+PF Dylan Fowler             12    4    3    9    2   22.2    0    0    0   0    0    0    4    2    2    2    6    4   66.7
+PG Paparto Subeina          37   23    7   21    9   42.9   11    4    3   1    1    0    5    2    3    1   11    4   36.4
+SF Nobira Nariaki            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Pakomha Nhoñsła           0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Gerard Holzer            40   14    8   13    7   53.8    0    0    0   0    3    0   19    6   13    3   10    6   60.0
+Serkr Atolls
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Atotra Bexek             37    4    2    9    2   22.2    0    0    0   0    1    0   10    1    9    2   12    7   58.3
+PF Moke Douangvily          38   24    7   16    8   50.0    1    0    5   4    0    0    3    0    3    3   17    9   52.9
+SF K'ita Senako             38    5    7   14    2   14.3    0    0    2   1    0    0    4    0    4    0   15    6   40.0
+SG Niko Stengel             40   18    2   16    8   50.0    3    0    1   1    0    0    6    1    5    4   21   12   57.1
+PG pekleɰ tiwan             39   10    5   12    4   33.3    1    0    2   2    2    1    5    3    2    3   19    9   47.4
+C  Able                     10    8    2    5    4   80.0    0    0    0   0    0    0    2    0    2    2    4    3   75.0
+PG Hoeki Ulepa               0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Lekai Modoki              0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF Munglegarra               0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Nupa Auprat               7    2    0    3    1   33.3    1    0    0   0    0    0    3    2    1    2    4    1   25.0
+SF Pergo Elomosei           10    4    0    6    2   33.3    0    0    0   0    0    0    1    0    1    2    3    2   66.7
+SG Pŋševa Ke'una             0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Pwot'e Lanakwi            9    2    0    5    1   20.0    0    0    0   0    0    0    0    0    0    0    2    1   50.0
+PF Tesine Falei              0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PG Zaxox Pasovya             8    4    0    2    1   50.0    0    0    1   1    0    1    0    0    0    0    5    0   0.0

@@ -1,0 +1,38 @@
+-----------------------------------------------------------
+| Lyintaria Lynx            | 22 | 25 | 35 | 18 | 0 | 100 |
+| Dotruga Falno             | 34 | 21 | 22 | 21 | 0 | 98  |
+-----------------------------------------------------------
+Lyintaria Lynx
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Lyintaria Player #4      37   10    4    9    5   55.6    0    0    0   0    1    1    7    1    6    4   12    5   41.7
+PF Aseqa Tituqu             37   12    5   11    6   54.5    0    0    0   0    2    1   11    3    8    1    9    4   44.4
+SF Lyintaria Player #1      35   19    4   17    5   29.4    6    2    8   7    1    1    5    2    3    1   12    6   50.0
+SG Waltoko                  39   28    3   19    7   36.8    8    4   10  10    1    0    6    1    5    2   17   13   76.5
+PG Phetdum Vongsay          34   12    5   17    3   17.6    7    3    3   3    2    1    5    0    5    2   12    6   50.0
+PG Kai Thammavong           13    4    2    6    2   33.3    0    0    0   0    1    1    0    0    0    2   11    4   36.4
+SF Lyintaria Player #10     12    1    1    4    0    0.0    0    0    2   1    0    0    3    2    1    0    5    0   0.0
+SG Lyintaria Player #11      3    0    0    1    0    0.0    1    0    0   0    0    0    0    0    0    0    1    1   100.0
+C  Lyintaria Player #13     10    2    0    1    1   100.0    0    0    0   0    0    0    4    0    4    0    2    0   0.0
+PF Lyintaria Player #2      10    4    1    5    2   40.0    0    0    0   0    1    0    5    1    4    0    4    1   25.0
+SG Lyintaria Player #3       5    8    0    5    2   40.0    4    2    2   2    0    0    2    0    2    0    3    2   66.7
+SG Lyintaria Player #6       0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Lyintaria Player #7       0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Lyintaria Player #8       0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PG Lyintaria Player #9       0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+Dotruga Falno
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Osiei Bituna              6    0    1    0    0    0.0    0    0    0   0    1    0    4    1    3    0    2    0   0.0
+SF Atakri Kalauni           29   12    7    9    6   66.7    1    0    0   0    3    0    5    4    1    5   14    2   14.3
+C  Bro McBeth                0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Lato Naixi               18    9    4    8    4   50.0    1    0    0   0    1    0    7    1    6    5   10    4   40.0
+PF Kapel Hilo                4    0    1    0    0    0.0    0    0    0   0    1    0    1    1    0    0    2    1   50.0
+SG Vanhik Slivókŕámhomhók   22   25    1   11   11   100.0    0    0    0   0    0    0    2    1    1    5   11    3   27.3
+PG Danomobei Subeina        10    3    0    2    1   50.0    0    0    0   0    1    0    5    2    3    2    7    2   28.6
+SF Blaxanon Bonits          17    0    3    6    0    0.0    0    0    0   0    0    0    1    0    1    1    7    3   42.9
+PG Atobeino Tixom            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Atumobei Tute            43   10    6   13    5   38.5    0    0    0   0    2    0   12    4    8    3   14    7   50.0
+PF Dylan Fowler              0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PG Paparto Subeina          37   27    3   21    9   42.9    4    0    5   4    2    0    6    2    4    2   16    3   18.8
+SF Nobira Nariaki            0    0    1    2    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Pakomha Nhoñsła           6    2    1    2    1   50.0    0    0    0   0    0    0    4    1    3    1    4    2   50.0
+C  Gerard Holzer            41   10    8   14    5   35.7    0    0    2   0    2    0   13    7    6    0    8    6   75.0

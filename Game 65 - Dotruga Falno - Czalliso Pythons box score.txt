@@ -1,0 +1,39 @@
+-----------------------------------------------------------
+| Dotruga Falno             | 32 | 26 | 25 | 23 | 0 | 106 |
+| Czalliso Pythons          | 35 | 24 | 24 | 24 | 0 | 107 |
+-----------------------------------------------------------
+Dotruga Falno
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Osiei Bituna              9    6    1    4    3   75.0    0    0    0   0    0    0    2    1    1    0    3    0   0.0
+SF Atakri Kalauni            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Bro McBeth                0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Lato Naixi                5    4    1    5    2   40.0    3    0    0   0    0    0    3    0    3    0    1    0   0.0
+PF Kapel Hilo               11    2    4    2    1   50.0    0    0    2   0    0    0    3    2    1    0    2    1   50.0
+SG Vanhik Slivókŕámhomhók   42   13    8   13    5   38.5    4    2    1   1    1    0    8    1    7    2   16    7   43.8
+PG Danomobei Subeina         0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF Blaxanon Bonits          21    6    2    9    3   33.3    0    0    0   0    0    0    6    1    5    0    6    4   66.7
+PG Atobeino Tixom            8    6    2    4    3   75.0    0    0    0   0    0    0    1    1    0    0    4    3   75.0
+PF Atumobei Tute            28   16    5   15    8   53.3    0    0    0   0    1    0    6    1    5    5   14   12   85.7
+PF Dylan Fowler              8    4    1    3    2   66.7    0    0    0   0    2    0    4    3    1    1    1    1   100.0
+PG Paparto Subeina          39   21    5   18    8   44.4    5    3    2   2    2    0   11    4    7    2   18    6   33.3
+SF Nobira Nariaki           26   10    7   16    5   31.3    0    0    0   0    1    0    6    1    5    0    5    3   60.0
+SG Pakomha Nhoñsła           0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Gerard Holzer            38   18    4   19    9   47.4    0    0    0   0    0    0   14    3   11    2   20   12   60.0
+Czalliso Pythons
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Sagolnasei Korsobo       10    8    3    5    4   80.0    0    0    0   0    0    0    2    1    1    5    5    5   100.0
+PF tag                      21   18    1   10    9   90.0    0    0    0   0    0    0    3    0    3    5   13    7   53.8
+SF war                      41   14    9    9    7   77.8    0    0    0   0    0    1    4    2    2    5   24    8   33.3
+SG mu                       41   15   11   14    6   42.9    6    0    1   0    1    1    7    3    4    1   15    6   40.0
+PG Naxto Lizaxium           32   12    9   16    5   31.3    5    0    0   0    0    1    3    1    2    4   13    6   46.2
+C  fal                      21   14    2   11    7   63.6    0    0    0   0    0    0    1    0    1    3    9    4   44.4
+PG bon                      15   12    3    6    4   66.7    0    0    1   1    0    0    5    1    4    1    9    5   55.6
+SG panpek hana ševéŋkev      6    2    0    3    1   33.3    0    0    0   0    1    0    1    0    1    1    3    1   33.3
+SG hig                       0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF son                      15    8    0    6    4   66.7    0    0    0   0    0    0    2    1    1    2    4    3   75.0
+PF Holy Yektonesia Player #811    2    3    1    1   100.0    0    0    0   0    0    0    4    2    2    0    3    1   33.3
+C  luz                      16    2    2    7    1   14.3    0    0    0   0    1    0    4    2    2    3    9    3   33.3
+SF elp                       0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PG yeb                       0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF Mónhin Nasa               6    0    0    2    0    0.0    0    0    0   0    0    0    0    0    0    0    1    0   0.0
+PG Matsuyama Tadashi         0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0

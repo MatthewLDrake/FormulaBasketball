@@ -1,0 +1,39 @@
+-----------------------------------------------------------
+| Aiyota Pumps              | 24 | 17 | 30 | 15 | 0 | 86  |
+| Dotruga Falno             | 15 | 28 | 29 | 28 | 0 | 100 |
+-----------------------------------------------------------
+Aiyota Pumps
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Kardo Cows               37   12    9   11    6   54.5    0    0    0   0    1    2    6    1    5    3   11    5   45.5
+PF Hevek Gagomos             0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF Aiyota Player #5          0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Aiyota Player #3         38   16    2   15    7   46.7    2    1    2   1    4    0    9    5    4    2   16    8   50.0
+PG Aiyota Player #2         35   20    6   15    8   53.3    7    3    1   1    0    1    7    3    4    5   16   10   62.5
+C  Aiyota Player #1          5    2    1    1    1   100.0    0    0    0   0    2    1    0    0    0    1    1    0   0.0
+PF Aiyota Player #10         0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Aiyota Player #12         0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Aiyota Player #4         26   10    0   10    5   50.0    0    0    0   0    0    0    9    0    9    0    8    5   62.5
+SF Aiyota Player #6         26   12    4   12    4   33.3    7    3    2   1    0    1    0    0    0    2   16    8   50.0
+PG Aiyota Player #7         13    2    0    5    1   20.0    2    0    0   0    0    0    0    0    0    1    5    1   20.0
+C  Aiyota Player #8          0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Aiyota Player #9          9    2    1    1    1   100.0    0    0    0   0    0    0    2    0    2    2    3    2   66.7
+PF Amari Yakumo             21    8    0    8    4   50.0    0    0    0   0    2    0    3    0    3    0    6    4   66.7
+SF Small Forward #159       21    0    5    9    0    0.0    0    0    2   0    0    0    5    2    3    1    6    1   16.7
+C  Watsuji Isei              5    2    0    4    1   25.0    0    0    0   0    1    0    1    0    1    0    1    1   100.0
+Dotruga Falno
+POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
+C  Osiei Bituna              8    5    0    3    2   66.7    0    0    2   1    1    1    2    0    2    2    5    3   60.0
+SF Atakri Kalauni            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Bro McBeth                0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SG Lato Naixi               20    8    6    9    4   44.4    1    0    0   0    1    0    3    1    2    1    7    4   57.1
+PF Kapel Hilo                3    2    0    3    1   33.3    0    0    0   0    0    0    0    0    0    1    4    2   50.0
+SG Vanhik Slivókŕámhomhók   27   13    5   10    6   60.0    2    0    0   0    2    0    5    2    3    4    9    4   44.4
+PG Danomobei Subeina        12    2    1    4    1   25.0    0    0    0   0    0    0    2    2    0    0    6    0   0.0
+SF Blaxanon Bonits          26    4    7    8    2   25.0    0    0    0   0    0    0    2    0    2    1   12    2   16.7
+PG Atobeino Tixom            4    0    0    1    0    0.0    0    0    0   0    0    0    3    1    2    0    0    0   0.0
+PF Atumobei Tute            39   16    8   10    8   80.0    0    0    0   0    2    1   14    7    7    4   13    7   53.8
+PF Dylan Fowler              4    0    0    1    0    0.0    0    0    0   0    1    0    2    1    1    0    1    0   0.0
+PG Paparto Subeina          31   28    4   16   10   62.5    2    0    3   2    3    0    5    3    2    5   14    9   64.3
+SF Nobira Nariaki           21   14    2   14    7   50.0    0    0    0   0    1    1    4    2    2    2    9    2   22.2
+SG Pakomha Nhoñsła           0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Gerard Holzer            39    8    6   10    4   40.0    0    0    0   0    1    0   13    3   10    2   11    5   45.5
