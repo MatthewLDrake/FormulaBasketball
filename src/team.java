@@ -250,4 +250,9 @@ public class team implements Serializable, Comparable<team>
 	else return 4;
 	    
     }
+	public player[] getPresets()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
