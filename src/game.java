@@ -8,9 +8,12 @@ public class game
 	private int[] firstQuarterScore, secondQuarterScore, thirdQuarterScore, fourthQuarterScore, OTScore;
 	private boolean awayTipOff;
 	private currentTeam playingAwayTeam, playingHomeTeam;
+	private gameWriter gameWriter;
 
-	public game(team away, team home)
+	public game(gameWriter gameWriter, team away, team home)
 	{
+		this.gameWriter = gameWriter;
+		this.gameWriter.listOfStrings.add("Game,"+ away.getTeamName() + "," + home.getTeamName());
 		firstQuarterScore = new int[]{0,0};
 		secondQuarterScore = new int[]{0,0}; 
 		thirdQuarterScore = new int[]{0,0}; 
@@ -156,7 +159,6 @@ public class game
 	}
 	private boolean tipOff()
 	{
-
 		double temp = playingAwayTeam.center.getJumpingRating() - playingHomeTeam.center.getJumpingRating();
 
 		Random r = new Random();
@@ -206,6 +208,7 @@ public class game
 			}
 			int timePassed = r.nextInt(14)+8;
 			if(timePassed > timeRemaining)timePassed = timeRemaining;
+			gameWriter.listOfStrings.add(awayTeamScore + "," + homeTeamScore + "," + timeRemaining);
 			staminaRegen += timePassed;
 			timeRemaining = timeRemaining - timePassed;
 			for(int i = 0; i<5;i++)
@@ -531,6 +534,8 @@ public class game
 					if(lastPass < 0)lastPass = 3;
 					else if(lastPass < 6)lastPass = 2;
 					else lastPass = 1;
+					break;
+				default:
 					break;
 				}
 
