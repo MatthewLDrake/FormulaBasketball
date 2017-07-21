@@ -91,6 +91,7 @@ public class statWriter
 			temp = temp + sb.toString();
 			formatter.close();
 
+			
 		}
 	}
 	public String toString()

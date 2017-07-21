@@ -778,7 +778,7 @@ public class game
 			}
 
 		}
-		int temp = r.nextInt(11)-3;
+		int temp = r.nextInt(15)-6;
 
 		double temp2 = defensivePlayer.getJumpingRating()+temp - offensivePlayer.getJumpingRating();
 		boolean retVal = temp2 > 0;
