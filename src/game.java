@@ -208,9 +208,12 @@ public class game
 			}
 			int timePassed = r.nextInt(14)+8;
 			if(timePassed > timeRemaining)timePassed = timeRemaining;
-			gameWriter.listOfStrings.add(awayTeamScore + "," + homeTeamScore + "," + timeRemaining);
+			
 			staminaRegen += timePassed;
 			timeRemaining = timeRemaining - timePassed;
+			statWriter awayStats = new statWriter(awayTeam);
+			statWriter homeStats = new statWriter(homeTeam);
+			gameWriter.listOfStrings.add(awayTeamScore + "," + homeTeamScore + "," + timeRemaining + "_" + awayStats.toString() + "_" + homeStats.toString());
 			for(int i = 0; i<5;i++)
 			{
 				double temp1 = -60;
