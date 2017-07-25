@@ -5,6 +5,7 @@ public class currentTeam
 	public int length = 5;
 	public player superStar, playMaker, rebounder;
 	public team team;
+	public Coach coach;
 	public currentTeam(team team)
 	{
 		pointGuard = null; 
@@ -16,6 +17,7 @@ public class currentTeam
 		superStar = null;
 		playMaker = null;
 		rebounder = null;
+		coach = team.getCoach();
 	}
 	public currentTeam(currentTeam copy)
 	{
@@ -28,6 +30,7 @@ public class currentTeam
 		superStar = copy.superStar;
 		playMaker = copy.playMaker;
 		rebounder = copy.rebounder;
+		coach = copy.coach;
 	}
 	public player get(int i)
 	{
@@ -68,6 +71,17 @@ public class currentTeam
 		}
 
 	}
+	public int getPos(player player)
+	{
+	    if(player.equals(center))return 1;
+	    else if(player.equals(powerForward))return 2;
+	    else if(player.equals(smallForward))return 3;
+	    else if(player.equals(shootingGuard))return 4;
+	    else if(player.equals(pointGuard))return 5;
+	    
+	    return -1;
+	}
+	
 	public void checkTeam()
 	{
 		player[] arr = team.getPresets();
@@ -119,7 +133,7 @@ public class currentTeam
 		int pos = 0;
 
 		double highestTotal = 0;
-		for(int i = 0; i < 5; i++)
+		for(int i = 4; i >= 0; i--)
 		{
 			player temp = get(i);
 			double tempTotal = temp.getPassing();

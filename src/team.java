@@ -2,6 +2,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Random;
 
 public class team implements Serializable, Comparable<team>
 {
@@ -10,6 +11,7 @@ public class team implements Serializable, Comparable<team>
      */
     private static final long serialVersionUID = 1L;
     private int losses = 0;
+    private Coach coach;
     private ArrayList<player> players;
     private String teamName;
     private int[] playersPerPos;
@@ -18,6 +20,7 @@ public class team implements Serializable, Comparable<team>
     private Queue<Integer> lastGames;
     public team(String teamName)
     {
+	coach = null;
 	this.teamName = teamName;
 	players = new ArrayList<player>();
 	playersPerPos = new int[5];
@@ -25,6 +28,14 @@ public class team implements Serializable, Comparable<team>
 	pointsScored = 0;
 	pointsAgainst = 0;
 	lastGames = new LinkedList<Integer>();
+    }
+    public void addCoach(Coach coach)
+    {
+	this.coach = coach;
+    }
+    public Coach getCoach()
+    {
+	return coach;
     }
     public void addPlayer(player newPlayer)
     {
@@ -100,7 +111,7 @@ public class team implements Serializable, Comparable<team>
     }
     public int getWins()
     {
-	
+
 	return wins;
     }
     public void addDivisionWin(int i)
@@ -158,7 +169,7 @@ public class team implements Serializable, Comparable<team>
 	    if(lastGames.size() == 3)lastGames.poll();
 	    lastGames.add(num);
 	}
-	
+
 
 	int retVal = 0;
 
@@ -183,7 +194,7 @@ public class team implements Serializable, Comparable<team>
 	    players.get(i).setDefensiveModifier(modifier.getDefenseModifier());
 	    players.get(i).setOtherModifier(modifier.getOtherModifier());
 	}
-	
+
     }
     public int getDivisionRank()
     {
@@ -226,7 +237,7 @@ public class team implements Serializable, Comparable<team>
     public void setTeamNum(int i)
     {
 	teamNum = i;
-	
+
     }
     public int getTeamNum()
     {
@@ -240,7 +251,7 @@ public class team implements Serializable, Comparable<team>
 	    players.get(i).addDefensiveModifier(modifier.getDefenseModifier());
 	    players.get(i).addOtherModifier(modifier.getOtherModifier());
 	}
-	
+
     }
     public int getDivision()
     {
@@ -248,11 +259,29 @@ public class team implements Serializable, Comparable<team>
 	else if (teamNum < 16)return 2;
 	else if(teamNum < 24)return 3;
 	else return 4;
-	    
+
     }
-	public player[] getPresets()
+    public player[] getPresets()
+    {
+	// TODO Auto-generated method stub
+	return null;
+    }
+    public Modifier getCoachModifier()
+    {
+	double offense = 0, defense = 0;
+	Random r = new Random();
+	int offenseNum = r.nextInt(100);
+	if(offenseNum < coach.getOffenseModifierProbability())
 	{
-		// TODO Auto-generated method stub
-		return null;
+	    offense = coach.getOffenseModifier();
 	}
+	int defenseNum = r.nextInt(100);
+
+	if(defenseNum < coach.getDefenseModifierProbability())
+	{
+	    defense = coach.getDefenseModifier();
+	}
+
+	return new changeAbleModifier(offense, defense);
+    }
 }
