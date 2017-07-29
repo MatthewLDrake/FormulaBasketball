@@ -18,7 +18,7 @@ public class Print
 	{
 	    try
 		{
-		    writer = new PrintWriter(teams.get(i).getTeamName() + ".csv", "UTF-8");
+		    writer = new PrintWriter(teams.get(i).toString() + ".csv", "UTF-8");
 		}
 		catch (FileNotFoundException e)
 		{

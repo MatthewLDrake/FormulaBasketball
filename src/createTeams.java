@@ -568,6 +568,73 @@ public class createTeams implements Serializable
 	teams.get(29).addCoach(new Coach("Coach #30", 53, 92, 0.7, 11, 0.3, 15, Tempo.MEDIUM, coachShotType.OUTSIDE, ssInvolvment.LOW));
 	teams.get(30).addCoach(new Coach("Coach #31", 76, 89, -0.7, 10, -0.6, 26, Tempo.MEDIUM, coachShotType.BALANCED, ssInvolvment.LOW));
 	teams.get(31).addCoach(new Coach("Coach #32", 45, 91, -0.3, 17, -0.6, 22, Tempo.MEDIUM, coachShotType.OUTSIDE, ssInvolvment.MEDIUM));
+	
+	teams.get(0).setTeamResults(new teamResults(new int[] {25, 12, 13}));
+	
+	teams.get(1).setTeamResults(new teamResults(new int[] {20, 2, 2}));
+	
+	teams.get(2).setTeamResults(new teamResults(new int[] {2, 4, 5}));
+	
+	teams.get(3).setTeamResults(new teamResults(new int[] {26, 11, 26}));
+	
+	teams.get(4).setTeamResults(new teamResults(new int[] {15, 20, 30}));
+	
+	teams.get(5).setTeamResults(new teamResults(new int[] {32, 6, 14}));
+	
+	teams.get(6).setTeamResults(new teamResults(new int[] {18, 23, 8}));
+	
+	teams.get(7).setTeamResults(new teamResults(new int[] {4, 10, 3}));
+	
+	teams.get(8).setTeamResults(new teamResults(new int[] {29, 16, 21}));
+	
+	teams.get(9).setTeamResults(new teamResults(new int[] {27, 8, 10}));
+	
+	teams.get(10).setTeamResults(new teamResults(new int[] {10, 18, 17}));
+	
+	teams.get(11).setTeamResults(new teamResults(new int[] {8, 29, 27}));
+	
+	teams.get(12).setTeamResults(new teamResults(new int[] {12, 25, 15}));
+	
+	teams.get(13).setTeamResults(new teamResults(new int[] {14, 27, 19}));
+	
+	teams.get(14).setTeamResults(new teamResults(new int[] {23, 31, 32}));
+	
+	teams.get(15).setTeamResults(new teamResults(new int[] {6, 13, 11}));
+	
+	teams.get(16).setTeamResults(new teamResults(new int[] {24, 24, 7}));
+	
+	teams.get(17).setTeamResults(new teamResults(new int[] {3, 7, 18}));
+	
+	teams.get(18).setTeamResults(new teamResults(new int[] {22, 32, 31}));
+	
+	teams.get(19).setTeamResults(new teamResults(new int[] {9, 5, 6}));
+	
+	teams.get(20).setTeamResults(new teamResults(new int[] {5, 9, 9}));
+	
+	teams.get(21).setTeamResults(new teamResults(new int[] {7, 17, 22}));
+	
+	teams.get(22).setTeamResults(new teamResults(new int[] {21, 22, 23}));
+	
+	teams.get(23).setTeamResults(new teamResults(new int[] {13, 19, 29}));
+	
+	teams.get(24).setTeamResults(new teamResults(new int[] {16, 26, 28}));
+	
+	teams.get(25).setTeamResults(new teamResults(new int[] {19, 28, 16}));
+	
+	teams.get(26).setTeamResults(new teamResults(new int[] {1, 1, 1}));
+	
+	teams.get(27).setTeamResults(new teamResults(new int[] {31, 30, 25}));
+	
+	teams.get(28).setTeamResults(new teamResults(new int[] {17, 15, 4}));
+	
+	teams.get(29).setTeamResults(new teamResults(new int[] {11, 21, 24}));
+	
+	teams.get(30).setTeamResults(new teamResults(new int[] {28, 3, 12}));
+	
+	teams.get(31).setTeamResults(new teamResults(new int[] {30, 14, 20}));
+	
+	
+	
 	/*
 	teams.add(new team("10 Durability"));
 	teams.add(new team("1 Durability"));

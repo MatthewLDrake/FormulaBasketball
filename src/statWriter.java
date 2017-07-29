@@ -50,7 +50,7 @@ public class statWriter
 			
 			
 		}
-		temp = temp + team.getTeamName() + "+";
+		temp = temp + team.toString() + "+";
 		temp = temp + "POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%+";
 		for(int k = 0; k <team.getSize(); k++)
 		{

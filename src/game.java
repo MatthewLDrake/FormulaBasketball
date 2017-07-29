@@ -13,7 +13,7 @@ public class game
     public game(gameWriter gameWriter, team away, team home)
     {
 	this.gameWriter = gameWriter;
-	if(gameWriter != null)this.gameWriter.listOfStrings.add("Game,"+ away.getTeamName() + "," + home.getTeamName());
+	if(gameWriter != null)this.gameWriter.listOfStrings.add("Game,"+ away.toString() + "," + home.toString());
 	firstQuarterScore = new int[]{0,0};
 	secondQuarterScore = new int[]{0,0}; 
 	thirdQuarterScore = new int[]{0,0}; 

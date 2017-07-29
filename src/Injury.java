@@ -10,8 +10,8 @@ public class Injury
 	{
 		this.injuredPlayer = injuredPlayer;
 		
-		teamOneName = teamOne.getTeamName();
-		teamTwoName = teamTwo.getTeamName();
+		teamOneName = teamOne.toString();
+		teamTwoName = teamTwo.toString();
 		this.quarterNum = "" + quarterNum;
 		this.minutesRemaining = "" + (timeRemaining/60);
 		if(timeRemaining%60 < 10)
