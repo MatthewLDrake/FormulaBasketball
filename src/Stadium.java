@@ -4,7 +4,7 @@ public class Stadium
 {
 	private int capacityLevel, concessionLevel, overallQualityLevel;
 	private float cheapSeatsPrice, averageSeatsPrice, highEndSeatsPrice, luxuryBoxesPrice;
-	private int cheapSeatsCount, averageSeatsCount, highEndSeatsCount, luxuryBoxesCount;
+	private long cheapSeatsCount, averageSeatsCount, highEndSeatsCount, luxuryBoxesCount;
 	public Stadium(float[] seatPrices)
 	{
 		capacityLevel = 1;
@@ -35,10 +35,11 @@ public class Stadium
 	{
 		int maxCapacity = getMaxCapacity();
 
-		cheapSeatsCount = Math.round(maxCapacity * (1/3));
-		averageSeatsCount = Math.round(maxCapacity * (1/2));
+		cheapSeatsCount = Math.round(maxCapacity * 2.0/3.0);
+		averageSeatsCount = Math.round(maxCapacity * .3);
 		highEndSeatsCount = maxCapacity - (cheapSeatsCount+averageSeatsCount);
 		luxuryBoxesCount = 5;
+		
 	}
 	public void upgradeCapacity()
 	{
@@ -55,11 +56,11 @@ public class Stadium
 	}
 	public attendance getAttendance(team teamOne, team teamTwo, boolean playoffs)
 	{
-		int numCheapSeats = cheapSeatsCount;
-		int numAverageSeats = averageSeatsCount;
-		int numHighEndSeats = highEndSeatsCount;
-		int numLuxurySeats = luxuryBoxesCount*10;
-		int numLuxuryBoxesUsed = 5;
+		long numCheapSeats = cheapSeatsCount;
+		long numAverageSeats = averageSeatsCount;
+		long numHighEndSeats = highEndSeatsCount;
+		long numLuxurySeats = luxuryBoxesCount*10;
+		long numLuxuryBoxesUsed = 5;
 		if(!playoffs)
 		{
 			numCheapSeats = getCheapSeatsAttending(teamOne.getTeamResults().getTeamTier(), teamTwo.getTeamResults().getTeamTier());
@@ -70,13 +71,12 @@ public class Stadium
 			numLuxuryBoxesUsed = temp[1];
 		}
 		int price = Math.round(numCheapSeats*cheapSeatsPrice+numAverageSeats*averageSeatsPrice+numHighEndSeats*highEndSeatsPrice+numLuxuryBoxesUsed*luxuryBoxesPrice);
-
 		return new attendance(numCheapSeats+numAverageSeats+numHighEndSeats+numLuxurySeats,price);
 	}
 	private int[] getLuxuryBoxSeatsAttending(teamTier teamTier, teamTier teamTier2)
 	{
-		int max = 0;
-		int min = 0;
+		long max = 0;
+		long min = 0;
 		int peopleInBoxMin = 0;
 		int peopleInBoxMax = 0;
 		
@@ -113,8 +113,9 @@ public class Stadium
 		}
 		
 		
-
-		int randomNum = rand.nextInt((max - min) + 1) + min;
+		int tempMax = (int)max;
+		int tempMin = (int)min;
+		int randomNum = rand.nextInt((tempMax - tempMin) + 1) + tempMin;
 		int sum = 0;
 		for(int i = 0; i < randomNum; i ++)
 		{
@@ -123,64 +124,66 @@ public class Stadium
 		
 		return new int[] {sum, randomNum};
 	}
-	private int getHighEndSeatsAttending(teamTier teamTier, teamTier teamTier2)
+	private long getHighEndSeatsAttending(teamTier teamTier, teamTier teamTier2)
 	{
-		int max = 0;
-		int min = 0;
+		long max = 0;
+		long min = 0;
 		if(highEndSeatsPrice < 60)return highEndSeatsCount;
 		if(teamTier.equals(teamTier2))
 		{
 			max = highEndSeatsCount;
-			min = max - (5-overallQualityLevel)*100;
+			min = max - (5-overallQualityLevel)*10;
 		}
 		else if(teamTier.compareTo(teamTier2) > 0)
 		{
 			max = highEndSeatsCount;
-			min = max - (5-overallQualityLevel)*250;
+			min = max - (5-overallQualityLevel)*25;
 		}
 		else
 		{
-			max = highEndSeatsCount- (5-overallQualityLevel)*100;
-			min = max - (5-overallQualityLevel)*1000;
+			max = highEndSeatsCount- (5-overallQualityLevel)*10;
+			min = Math.max(max - (5-overallQualityLevel)*100,0);
 		}
 		
 		Random rand = new Random();
-
-		int randomNum = rand.nextInt((max - min) + 1) + min;
+		int tempMax = (int)max;
+		int tempMin = (int)min;
+		int randomNum = rand.nextInt((tempMax - tempMin) + 1) + tempMin;
 		return randomNum;
 	}
-	private int getAverageSeatsAttending(teamTier teamTier, teamTier teamTier2)
+	private long getAverageSeatsAttending(teamTier teamTier, teamTier teamTier2)
 	{
-		int max = 0;
-		int min = 0;
+		long max = 0;
+		long min = 0;
 		
 		if(averageSeatsPrice < 30)return averageSeatsCount;
 		
 		if(teamTier.equals(teamTier2))
 		{
 			max = averageSeatsCount;
-			min = max - (5-overallQualityLevel)*100;
+			min = max - (5-overallQualityLevel)*50;
 		}
 		else if(teamTier.compareTo(teamTier2) > 0)
 		{
 			max = averageSeatsCount;
-			min = max - (5-overallQualityLevel)*250;
+			min = max - (5-overallQualityLevel)*125;
 		}
 		else
 		{
-			max = averageSeatsCount- (5-overallQualityLevel)*100;
-			min = max - (5-overallQualityLevel)*1000;
+			max = averageSeatsCount- (5-overallQualityLevel)*50;
+			min = max - (5-overallQualityLevel)*500;
 		}
 		
 		Random rand = new Random();
-
-		int randomNum = rand.nextInt((max - min) + 1) + min;
+		int tempMax = (int)max;
+		int tempMin = (int)min;
+		int randomNum = rand.nextInt((tempMax - tempMin) + 1) + tempMin;
 		return randomNum;
 	}
-	private int getCheapSeatsAttending(teamTier teamTier, teamTier teamTier2)
+	private long getCheapSeatsAttending(teamTier teamTier, teamTier teamTier2)
 	{
-		int max = 0;
-		int min = 0;
+		long max = 0;
+		long min = 0;
 
 		if(cheapSeatsPrice < 10)
 		{
@@ -198,7 +201,9 @@ public class Stadium
 		}
 		Random rand = new Random();
 
-		int randomNum = rand.nextInt((max - min) + 1) + min;
+		int tempMax = (int)max;
+		int tempMin = (int)min;
+		int randomNum = rand.nextInt((tempMax - tempMin) + 1) + tempMin;
 		return randomNum;
 	}
 	public int getConcessionsSold(int attendance)
@@ -231,8 +236,8 @@ public class Stadium
 }
 class attendance
 {
-	int numberAttending, income;
-	attendance(int number, int income)
+	long numberAttending, income;
+	attendance(long number, long income)
 	{
 		this.numberAttending = number;
 		this.income = income;

@@ -4574,12 +4574,22 @@ public class formulaBasketball
 		executeGame(false,28, 29);
 		if(gameWriter != null)gameWriter.writeLines(); 
 
+		printFianances();
 
 		printInjuries();
 		
 
 	}
 
+	private static void printFianances()
+	{
+		for(int i = 0; i < create.size(); i++)
+		{
+			System.out.println(create.getTeam(i).toString() + " fiances: " + create.getTeam(i).getFianances());
+		}
+		
+		
+	}
 	private static void doWeeklyFianances()
 	{
 		if(startingGame % 4 == 0)
@@ -4823,8 +4833,7 @@ public class formulaBasketball
 			create.getTeam(i).addPointsAgainst(newGame.getHomeTeamScore());
 			
 			attendance temp = create.getTeam(j).getStadium().getAttendance(create.getTeam(j),create.getTeam(i), false);
-			create.getTeam(j).setFianances(temp.income);
-			System.out.println("The game between the " + create.getTeam(i) + " and the " + create.getTeam(j) + " had an attendance of " + temp.numberAttending + " and made $" + temp.income);
+			create.getTeam(j).setFianances((int)temp.income);
 			if(b)
 			{
 				PrintWriter writer = new PrintWriter("Game " + (startingGame-1) + " - " + create.getTeam(i).toString() + " - " + create.getTeam(j).toString() + " box score.txt", "UTF-8");

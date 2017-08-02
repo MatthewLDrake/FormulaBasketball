@@ -803,16 +803,17 @@ public class game
 	    }
 
 	}
-	int temp = r.nextInt(15)-6;
+	int temp = r.nextInt(10);
 
-	double temp2 = defensivePlayer.getJumpingRating()+temp - offensivePlayer.getJumpingRating();
-	boolean retVal = temp2 > 0;
-
+	
+	Object[] arr = getReboundResult(offensivePlayer.getJumpingRating(), defensivePlayer.getJumpingRating());
+	boolean retVal = (boolean) arr[0];
+	double temp2 = Math.abs((double)arr[1] - (double)arr[2]);
 	if(retVal)
 	{
 	    defensivePlayer.addRebound(1);
 	    defensivePlayer.addDefensiveRebound(1);
-	    if(Math.round(temp2+.25) == 5 && Math.floor(temp2) == 5)
+	    if(temp == 5 && temp2 < 1)
 	    {
 		defensivePlayer.addTurnovers(1);
 		retVal = !retVal;
@@ -822,7 +823,7 @@ public class game
 	{
 	    offensivePlayer.addRebound(1);
 	    offensivePlayer.addOffensiveRebound(1);
-	    if(Math.round(temp2+.25) == -3&& Math.floor(temp2) == -3)
+	    if(temp == 5 && temp2 < 1)
 	    {
 		offensivePlayer.addTurnovers(1);
 		retVal = !retVal;
@@ -830,6 +831,21 @@ public class game
 
 	}
 	return retVal;
+    }
+    private Object[] getReboundResult(double offenseSkill, double defenseSkill)
+    {
+    	boolean madeShot = true;
+    	double temp = offenseSkill - defenseSkill;
+	
+    	Random r = new Random();
+    	double num = 25+(r.nextInt(5)-2);
+    	num = num + (temp);
+    	double temp2 = r.nextInt(105);
+
+    	if(temp2 < num)madeShot = false;
+    	//if((Math.floor(temp2) == 3 && Math.round(temp2+.25) == 3) || (Math.floor(temp2) == 6 && Math.round(temp2+.4) == 6))
+    	Object[] retVal = new Object[] {madeShot, temp2, num};
+    	return retVal;
     }
     private int pass(player player1, player player2, boolean b)
     {
