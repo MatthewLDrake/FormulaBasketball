@@ -21,6 +21,8 @@ public class team implements Serializable, Comparable<team>
 	private Stadium stadium;
 	private teamResults teamResults;
 	private int fianance;
+	private Expenses expenses;
+	private Trainer trainer;
 	public team(String teamName)
 	{
 		coach = null;
@@ -33,6 +35,10 @@ public class team implements Serializable, Comparable<team>
 		lastGames = new LinkedList<Integer>();
 		stadium = new Stadium(new float[] {20, 100, 450, 1000});
 		fianance = 500000000;
+	}
+	public void setExpenses(double[] arr)
+	{
+		expenses = new Expenses(arr);
 	}
 	public int getFianances()
 	{
@@ -311,7 +317,16 @@ public class team implements Serializable, Comparable<team>
 	}
 	public void doExpenses()
 	{
-		// TODO Auto-generated method stub
+		fianance = expenses.chargeExpenses(fianance);
 		
+	}
+	public void addTrainer(Trainer trainer)
+	{
+		this.trainer = trainer;
+		
+	}
+	public Trainer getTrainer()
+	{
+		return trainer;
 	}
 }

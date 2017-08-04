@@ -1,16 +1,23 @@
 
 public class Expenses
 {
-	private int money;
-	public Expenses(int[] expenses)
+	private double[] weeklyExpenses;
+	public Expenses(double[] expenses)
 	{
+		weeklyExpenses = new double[expenses.length];
+		for(int i = 0; i < expenses.length; i++)
+		{
+			weeklyExpenses[i] = (expenses[i]/21)*1000000;
+		}
 	}
-	public int getMoney()
+	
+	public int chargeExpenses(int fianance)
 	{
-		return money;
-	}
-	public void changeMoney(int moneyChange)
-	{
-		money = money + moneyChange;
+		int retVal = fianance;
+		for(int i = 0; i < weeklyExpenses.length; i++)
+		{
+			retVal -= weeklyExpenses[i];
+		}
+		return retVal;
 	}
 }

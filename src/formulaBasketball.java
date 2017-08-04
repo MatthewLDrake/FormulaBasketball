@@ -36,7 +36,11 @@ public class formulaBasketball
 			load();
 		}
 		else
+
+		{
 			create = new createTeams();
+			doSetup();
+		}
 
 
 		try
@@ -108,6 +112,65 @@ public class formulaBasketball
 		standings.close();
 		saveData();
 		kb.close();
+	}
+	private static void doSetup()
+	{
+		create.getTeam(0).setExpenses(new double[]{88.7, 17.7, 160});
+		create.getTeam(16).setExpenses(new double[]{74.6, 15.5, 160});
+		create.getTeam(1).setExpenses(new double[]{99.8, 16.8, 160});
+		create.getTeam(8).setExpenses(new double[]{87.5, 16.1, 160});
+		create.getTeam(17).setExpenses(new double[]{94, 17.2, 160});
+		create.getTeam(9).setExpenses(new double[]{90.2, 15.8, 160});
+		create.getTeam(10).setExpenses(new double[]{78.4, 18.3, 160});
+		create.getTeam(18).setExpenses(new double[]{65.2, 18.3, 160});
+		create.getTeam(24).setExpenses(new double[]{76.4, 17.8, 160});
+		create.getTeam(2).setExpenses(new double[]{99.2, 17.2, 160});
+		create.getTeam(25).setExpenses(new double[]{91.5, 18.3, 160});
+		create.getTeam(19).setExpenses(new double[]{91.2, 18, 160});
+		create.getTeam(26).setExpenses(new double[]{99.8, 16.1, 160});
+		create.getTeam(20).setExpenses(new double[]{94.5, 18.3, 160});
+		create.getTeam(21).setExpenses(new double[]{86.5, 15.9, 160});
+		create.getTeam(3).setExpenses(new double[]{77, 19.5, 160});
+		create.getTeam(27).setExpenses(new double[]{86.8, 17.2, 160});
+		create.getTeam(28).setExpenses(new double[]{97.6, 17.5, 160});
+		create.getTeam(11).setExpenses(new double[]{70.2, 15.9, 160});
+		create.getTeam(4).setExpenses(new double[]{66.6, 18.7, 160});
+		create.getTeam(29).setExpenses(new double[]{83.4, 15.8, 160});
+		create.getTeam(5).setExpenses(new double[]{80.8, 15.1, 160});
+		create.getTeam(12).setExpenses(new double[]{77, 17.3, 160});
+		create.getTeam(30).setExpenses(new double[]{80.8, 19.3, 160});
+		create.getTeam(13).setExpenses(new double[]{73.4, 17.7, 160});
+		create.getTeam(6).setExpenses(new double[]{76.8, 18.3, 160});
+		create.getTeam(14).setExpenses(new double[]{99.5, 18.3, 160});
+		create.getTeam(15).setExpenses(new double[]{82.4, 17.2, 160});
+		create.getTeam(7).setExpenses(new double[]{97.5, 19.4, 160});
+		create.getTeam(22).setExpenses(new double[]{80.9, 16.1, 160});
+		create.getTeam(23).setExpenses(new double[]{82.3, 15.4, 160});
+		create.getTeam(31).setExpenses(new double[]{90.1, 16.1, 160});
+		
+		
+		
+		ArrayList<DoubleDoubles> averages = new ArrayList<DoubleDoubles>();
+		for(int i = 0; i < create.size(); i++)
+		{
+			averages.add(new DoubleDoubles(create.getTeam(i).getTeamResults().getAverage(),i));
+		}
+		Collections.sort(averages);
+		for(int i = 0; i < 10; i++)
+		{
+			create.getTeam(averages.get(i).i).getTeamResults().setTeamTier(teamTier.ELITE);
+			System.out.println((i+1) + ". " + create.getTeam(averages.get(i).i));
+		}
+		for(int i = 10; i < 23; i++)
+		{
+			create.getTeam(averages.get(i).i).getTeamResults().setTeamTier(teamTier.MIDRANGE);
+			System.out.println((i+1) + ". " + create.getTeam(averages.get(i).i));
+		}
+		for(int i = 23; i < create.size(); i++)
+		{
+			create.getTeam(averages.get(i).i).getTeamResults().setTeamTier(teamTier.BOTTOMFEEDER);
+			System.out.println((i+1) + ". " + create.getTeam(averages.get(i).i));
+		}
 	}
 	private static void saveData()
 	{
@@ -4577,7 +4640,7 @@ public class formulaBasketball
 		printFianances();
 
 		printInjuries();
-		
+
 
 	}
 
@@ -4587,8 +4650,8 @@ public class formulaBasketball
 		{
 			System.out.println(create.getTeam(i).toString() + " fiances: " + create.getTeam(i).getFianances());
 		}
-		
-		
+
+
 	}
 	private static void doWeeklyFianances()
 	{
@@ -4599,7 +4662,7 @@ public class formulaBasketball
 				create.getTeam(i).doExpenses();
 			}
 		}
-		
+
 	}
 	private static void printInjuries()
 	{
@@ -4831,7 +4894,7 @@ public class formulaBasketball
 			create.getTeam(j).addPoints(newGame.getHomeTeamScore());
 			create.getTeam(j).addPointsAgainst(newGame.getAwayTeamScore());
 			create.getTeam(i).addPointsAgainst(newGame.getHomeTeamScore());
-			
+
 			attendance temp = create.getTeam(j).getStadium().getAttendance(create.getTeam(j),create.getTeam(i), false);
 			create.getTeam(j).setFianances((int)temp.income);
 			if(b)
