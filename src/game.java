@@ -102,15 +102,15 @@ public class game
 	playQuarter(1, awayTipOff);
 	firstQuarterScore[0] = awayTeamScore;
 	firstQuarterScore[1] = homeTeamScore;
-	inBetweenQuaters();
+	inBetweenQuarters();
 	playQuarter(2, !awayTipOff);
 	secondQuarterScore[0] = awayTeamScore-firstQuarterScore[0];
 	secondQuarterScore[1] = homeTeamScore-firstQuarterScore[1];
-	inBetweenQuaters();
+	inBetweenQuarters();
 	playQuarter(3, !awayTipOff);
 	thirdQuarterScore[0] = awayTeamScore-secondQuarterScore[0]-firstQuarterScore[0];
 	thirdQuarterScore[1] = homeTeamScore-secondQuarterScore[1]-firstQuarterScore[1];
-	inBetweenQuaters();
+	inBetweenQuarters();
 	playQuarter(4, awayTipOff);
 	fourthQuarterScore[0] = awayTeamScore-thirdQuarterScore[0]-secondQuarterScore[0]-firstQuarterScore[0];
 	fourthQuarterScore[1] = homeTeamScore-thirdQuarterScore[1]-secondQuarterScore[1]-firstQuarterScore[1];
@@ -120,7 +120,7 @@ public class game
 	{
 
 	    awayTipOff = tipOff();
-	    inBetweenQuaters();
+	    inBetweenQuarters();
 	    playQuarter(OT++, awayTipOff);
 	    //System.out.println(OT-1 + " (" + awayTeamScore + " - " + homeTeamScore + ")");
 	}
@@ -145,7 +145,7 @@ public class game
 	}
 
     }
-    private void inBetweenQuaters()
+    private void inBetweenQuarters()
     {
 	for(int i = 0; i < awayTeam.getSize();i++)
 	{
@@ -168,52 +168,79 @@ public class game
     }
     private void playQuarter(int quarterNum, boolean awayPoss)
     {
-	int timeRemaining = 720;
+	int timeRemaining = 0;
+	if(quarterNum < 5)
+	    timeRemaining = 720;
+	else
+	    timeRemaining = 300;
 	while(timeRemaining > 0)
 	{
+	    currentTeam currentTeam = null;
+	    if(awayPoss)currentTeam = playingAwayTeam;
+	    else currentTeam = playingHomeTeam;
+
 	    Random r = new Random();
 	    while(true)
 	    {
 		int playersInPlay = r.nextInt(9);
+		if(playersInPlay == 0)
+		{
+		    boolean[] temp = new boolean[]{r.nextBoolean(), r.nextBoolean(),r.nextBoolean(), r.nextBoolean(),r.nextBoolean(), r.nextBoolean(),r.nextBoolean()};
+
+
+		    boolean playMaker = true;
+		    for(int j = 0; j < temp.length; j++)
+		    {
+			playMaker = temp[j];
+			if(!playMaker)break;
+		    }
+		    if(!playMaker)playersInPlay = playersInPlay + r.nextInt(2)+1;
+		}
 		player[] whichPlayers = new player[playersInPlay + 1];
-		if(awayPoss)whichPlayers[0] = playingAwayTeam.pointGuard;
-		else whichPlayers[0] = playingHomeTeam.pointGuard;
-		player lastPlayer = whichPlayers[0];
+
+		if(currentTeam.coach.useSuperStar())whichPlayers[0] = currentTeam.superStar;
+		else whichPlayers[0] = currentTeam.playMaker;
+
+
+		currentTeam.lastPlayer = whichPlayers[0];
 		int counter = 1;
 		for(int i = playersInPlay;i > 0;i--)
 		{
-		    boolean[] temp = new boolean[]{r.nextBoolean(), r.nextBoolean(),r.nextBoolean(), r.nextBoolean(), r.nextBoolean(), r.nextBoolean()};
-		    
-		    player tempPlayer = null;
-		    if(awayPoss)tempPlayer = playingAwayTeam.superStar;
-		    else tempPlayer = playingHomeTeam.superStar;
-		    boolean superStar = true;
-		    for(int j = 0; j < temp.length; j++)
+		    boolean flag = false;
+		    if(i == 1)
 		    {
-			superStar = temp[j];
-			if(!superStar)break;
+			boolean[] temp = new boolean[]{r.nextBoolean(), r.nextBoolean(),r.nextBoolean()};
+
+
+			boolean superStar = true;
+			for(int j = 0; j < temp.length; j++)
+			{
+			    superStar = temp[j];
+			    if(!superStar)break;
+			}
+			player tempPlayer = null;
+			tempPlayer = currentTeam.superStar;
+			if(superStar && !tempPlayer.equals(whichPlayers[counter-1]))flag = true;
 		    }
-		    if(i != 1 || !superStar || tempPlayer.equals(whichPlayers[counter-1]))
+		    if(!flag)
 		    {
 			int temp2 = 0;
 			while(true)
 			{
 			    temp2 = r.nextInt(5);
-			    if(temp2 != lastPlayer.getPosition())break;
+			    if(temp2+1 != currentTeam.getPos(currentTeam.lastPlayer))break;
 
 			}
-			if(awayPoss)whichPlayers[counter++] = playingAwayTeam.get(temp2);
-			else whichPlayers[counter++] = playingHomeTeam.get(temp2);
+			whichPlayers[counter++] = currentTeam.get(temp2);
+
 		    }
 		    else
 		    {
-			if(awayPoss)whichPlayers[counter++] = playingAwayTeam.superStar;
-			else whichPlayers[counter++] = playingHomeTeam.superStar;
+			if(currentTeam.coach.useSuperStar())whichPlayers[counter++] = currentTeam.superStar;
+			else whichPlayers[counter++] = currentTeam.shooter;
 		    }
+		    currentTeam.lastPlayer = whichPlayers[counter-1];
 
-		    lastPlayer = whichPlayers[counter-1];
-
-		    //temp.remove(temp2);
 
 		}
 		int playResult = executePlay(whichPlayers,awayPoss);
@@ -229,7 +256,7 @@ public class game
 		}
 
 	    }
-	    int timePassed = r.nextInt(14)+8;
+	    int timePassed = r.nextInt(currentTeam.coach.getPreferredTempo().getRandomTime())+currentTeam.coach.getPreferredTempo().getMinimumTime();
 	    if(timePassed > timeRemaining)timePassed = timeRemaining;
 
 	    staminaRegen += timePassed;
@@ -274,22 +301,22 @@ public class game
 	Random r = new Random();
 	for(int i = 0; i < playingAwayTeam.length; i++)
 	{
-	    int injuryRate = (playingAwayTeam.get(i).getDurabilityRating()*13000);
+	    int injuryRate = (awayTeam.getTrainer().getInjuryPrevention(playingAwayTeam.get(i)));
 	    int injury = r.nextInt(injuryRate);
 	    if(injury == 500)
 	    {
 		playingAwayTeam.get(i).setInjured(true);
-		new Injury(playingAwayTeam.get(i),awayTeam, homeTeam, quarterNum, timeRemaining);
+		new Injury(playingAwayTeam.get(i),awayTeam, homeTeam, quarterNum, timeRemaining, awayTeam.getTrainer());
 	    }
 	}
 	for(int i = 0; i < playingHomeTeam.length; i++)
 	{
-	    int injuryRate =  (playingHomeTeam.get(i).getDurabilityRating()*13000);
+	    int injuryRate =  (homeTeam.getTrainer().getInjuryPrevention(playingHomeTeam.get(i)));
 	    int injury = r.nextInt(injuryRate);
 	    if(injury == 500)
 	    {
 		playingHomeTeam.get(i).setInjured(true);
-		new Injury(playingHomeTeam.get(i),awayTeam, homeTeam, quarterNum, timeRemaining);
+		new Injury(playingHomeTeam.get(i),awayTeam, homeTeam, quarterNum, timeRemaining, homeTeam.getTrainer());
 	    }
 	}
 
@@ -722,13 +749,18 @@ public class game
 	{
 	    if(b)
 	    {
-		offensivePlayer = playingHomeTeam.rebounder;
-		defensivePlayer = playingAwayTeam.rebounder;
+		if(playingAwayTeam.coach.useSuperStar())defensivePlayer = playingAwayTeam.superStar;
+		else defensivePlayer = playingAwayTeam.rebounder;
+		if(playingHomeTeam.coach.useSuperStar())offensivePlayer = playingHomeTeam.superStar;
+		else offensivePlayer = playingHomeTeam.rebounder;
+
 	    }
 	    else
 	    {
-		offensivePlayer = playingAwayTeam.rebounder;
-		defensivePlayer = playingHomeTeam.rebounder;
+		if(playingAwayTeam.coach.useSuperStar())offensivePlayer = playingAwayTeam.superStar;
+		else offensivePlayer = playingAwayTeam.rebounder;
+		if(playingHomeTeam.coach.useSuperStar())defensivePlayer = playingHomeTeam.superStar;
+		else defensivePlayer = playingHomeTeam.rebounder;
 	    }
 	}
 	else
@@ -805,7 +837,7 @@ public class game
 	}
 	int temp = r.nextInt(10);
 
-	
+
 	Object[] arr = getReboundResult(offensivePlayer.getJumpingRating(), defensivePlayer.getJumpingRating());
 	boolean retVal = (boolean) arr[0];
 	double temp2 = Math.abs((double)arr[1] - (double)arr[2]);
@@ -834,22 +866,24 @@ public class game
     }
     private Object[] getReboundResult(double offenseSkill, double defenseSkill)
     {
-    	boolean madeShot = true;
-    	double temp = offenseSkill - defenseSkill;
-	
-    	Random r = new Random();
-    	double num = 25+(r.nextInt(5)-2);
-    	num = num + (temp);
-    	double temp2 = r.nextInt(105);
+	boolean madeShot = true;
+	double temp = offenseSkill - defenseSkill;
 
-    	if(temp2 < num)madeShot = false;
-    	//if((Math.floor(temp2) == 3 && Math.round(temp2+.25) == 3) || (Math.floor(temp2) == 6 && Math.round(temp2+.4) == 6))
-    	Object[] retVal = new Object[] {madeShot, temp2, num};
-    	return retVal;
+	Random r = new Random();
+	double num = 25+(r.nextInt(5)-2);
+	num = num + (temp);
+	double temp2 = r.nextInt(105);
+
+	if(temp2 < num)madeShot = false;
+	//if((Math.floor(temp2) == 3 && Math.round(temp2+.25) == 3) || (Math.floor(temp2) == 6 && Math.round(temp2+.4) == 6))
+	Object[] retVal = new Object[] {madeShot, temp2, num};
+	return retVal;
     }
     private int pass(player player1, player player2, boolean b)
     {
-	double temp = player1.getPassing()+player2.getSeperation();
+
+	double temp = player1.getPassing()
+		+player2.getSeperation();
 	double temp2;
 	if(b)temp2 = playingHomeTeam.get(player2.getPosition()-1).getDefenseIQRating();
 	else temp2 = playingAwayTeam.get(player2.getPosition()-1).getDefenseIQRating();
@@ -859,15 +893,7 @@ public class game
 
 	return (int) ((temp+temp3) - temp2);
     }
-    public static ArrayList<Integer> assignValues(int length)
-    {
-	ArrayList<Integer> returnVal = new ArrayList<Integer>();
-	for(int i = 0; i<length;i++)
-	{
-	    returnVal.add(i);
-	}
-	return returnVal;
-    }
+
     public boolean getWinner()
     {
 

@@ -1,10 +1,16 @@
+import java.io.Serializable;
 import java.util.Random;
 
-public class Stadium
+public class Stadium implements Serializable
 {
+	/**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
 	private int capacityLevel, concessionLevel, overallQualityLevel;
 	private float cheapSeatsPrice, averageSeatsPrice, highEndSeatsPrice, luxuryBoxesPrice;
 	private long cheapSeatsCount, averageSeatsCount, highEndSeatsCount, luxuryBoxesCount;
+	private Concessions concessions;
 	public Stadium(float[] seatPrices)
 	{
 		capacityLevel = 1;
@@ -41,6 +47,10 @@ public class Stadium
 		luxuryBoxesCount = 5;
 		
 	}
+	public void startConcessions(String foodName, double foodPrice, String drinkName, double drinkPrice)
+	{
+	    concessions = new Concessions(foodName, foodPrice, drinkName, drinkPrice);
+	}
 	public void upgradeCapacity()
 	{
 		capacityLevel++;
@@ -63,17 +73,21 @@ public class Stadium
 		long numLuxuryBoxesUsed = 5;
 		if(!playoffs)
 		{
-			numCheapSeats = getCheapSeatsAttending(teamOne.getTeamResults().getTeamTier(), teamTwo.getTeamResults().getTeamTier());
-			numAverageSeats = getAverageSeatsAttending(teamOne.getTeamResults().getTeamTier(), teamTwo.getTeamResults().getTeamTier());
-			numHighEndSeats = getHighEndSeatsAttending(teamOne.getTeamResults().getTeamTier(), teamTwo.getTeamResults().getTeamTier());
-			int temp[] = getLuxuryBoxSeatsAttending(teamOne.getTeamResults().getTeamTier(), teamTwo.getTeamResults().getTeamTier());
+			numCheapSeats = getCheapSeatsAttending(teamOne.getTeamResults(), teamTwo.getTeamResults());
+			numAverageSeats = getAverageSeatsAttending(teamOne.getTeamResults(), teamTwo.getTeamResults());
+			numHighEndSeats = getHighEndSeatsAttending(teamOne.getTeamResults(), teamTwo.getTeamResults());
+			int temp[] = getLuxuryBoxSeatsAttending(teamOne.getTeamResults(), teamTwo.getTeamResults());
 			numLuxurySeats = temp[0];
 			numLuxuryBoxesUsed = temp[1];
 		}
 		int price = Math.round(numCheapSeats*cheapSeatsPrice+numAverageSeats*averageSeatsPrice+numHighEndSeats*highEndSeatsPrice+numLuxuryBoxesUsed*luxuryBoxesPrice);
 		return new attendance(numCheapSeats+numAverageSeats+numHighEndSeats+numLuxurySeats,price);
 	}
-	private int[] getLuxuryBoxSeatsAttending(teamTier teamTier, teamTier teamTier2)
+	public attendance[] getConcessions(attendance peopleAttending)
+	{
+	    return concessions.getConcessionSales(peopleAttending);
+	}
+	private int[] getLuxuryBoxSeatsAttending(teamResults teamTier, teamResults teamTier2)
 	{
 		long max = 0;
 		long min = 0;
@@ -124,7 +138,7 @@ public class Stadium
 		
 		return new int[] {sum, randomNum};
 	}
-	private long getHighEndSeatsAttending(teamTier teamTier, teamTier teamTier2)
+	private long getHighEndSeatsAttending(teamResults teamTier, teamResults teamTier2)
 	{
 		long max = 0;
 		long min = 0;
@@ -151,7 +165,7 @@ public class Stadium
 		int randomNum = rand.nextInt((tempMax - tempMin) + 1) + tempMin;
 		return randomNum;
 	}
-	private long getAverageSeatsAttending(teamTier teamTier, teamTier teamTier2)
+	private long getAverageSeatsAttending(teamResults teamTier, teamResults teamTier2)
 	{
 		long max = 0;
 		long min = 0;
@@ -180,7 +194,7 @@ public class Stadium
 		int randomNum = rand.nextInt((tempMax - tempMin) + 1) + tempMin;
 		return randomNum;
 	}
-	private long getCheapSeatsAttending(teamTier teamTier, teamTier teamTier2)
+	private long getCheapSeatsAttending(teamResults teamTier, teamResults teamTier2)
 	{
 		long max = 0;
 		long min = 0;

@@ -1,6 +1,12 @@
+import java.io.Serializable;
+import java.util.Random;
 
-public class Coach
+public class Coach implements Serializable
 {
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
     private int staminaSubOut; 
     private int staminaSubIn;
     private double offenseModifier; 
@@ -103,5 +109,11 @@ public class Coach
     public void setName(String name)
     {
 	this.name = name;
+    }
+    public boolean useSuperStar()
+    {
+	Random r = new Random();
+	return r.nextInt(100)+1 < superStarInvolvment.getValue();
+	
     }
 }

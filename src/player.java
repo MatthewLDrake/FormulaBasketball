@@ -9,7 +9,7 @@ public class player implements Serializable, Comparable<player>
     private static final long serialVersionUID = 1L;
     private boolean isPlaying, isStarter;
     private int position, layupRating, dunkRating, jumpRating, shotContestRating, defenseIQRating, jumpingRating, seperation, passing, staminaRating, threeRating, gameFouls, durability, injuryTotal;
-    private double stamina, shootingModifier, otherModifier, defensiveModifier ;
+    private double stamina, shootingModifier, otherModifier, defensiveModifier;
     private int[] stats, gameStats;
     private String name;
     private team team;

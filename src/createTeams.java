@@ -20,7 +20,7 @@ public class createTeams implements Serializable
     private void createTheTeams()
     {
 	teams.add(new team("Aahrus Moosi"));
-	
+
 	teams.get(0).addPlayer(new player(1 ,7 ,10 ,4 ,2 ,5 ,10 ,9 ,12 ,8 ,9 ,5 ,"Ajanis Vealerko", true));
 	teams.get(0).addPlayer(new player(2 ,8 ,9 ,4 ,4 ,5 ,6 ,5 ,9 ,7 ,5 ,10 ,"Yombeen", true));
 	teams.get(0).addPlayer(new player(3 ,10 ,5 ,1 ,1 ,8 ,9 ,6 ,10 ,7 ,5 ,9 ,"Aahrus Player #1", true));
@@ -148,6 +148,7 @@ public class createTeams implements Serializable
 	teams.get(7).addPlayer(new player(4 ,5 ,4 ,9 ,10 ,6 ,6 ,5 ,2 ,6 ,7 ,10 ,"Murata Yoshifumi", false));
 	teams.get(7).addPlayer(new player(5 ,3 ,3 ,9 ,9 ,5 ,8 ,6 ,2 ,7 ,5 ,8 ,"Namia Akaleta", false));
 	teams.get(7).addPlayer(new player(3 ,1 ,9 ,3 ,4 ,9 ,7 ,9 ,4 ,5 ,1 ,10 ,"Xaisomboun Tayvihane", false));
+	teams.get(7).setPresets(new player[]{teams.get(7).getPlayer(4), teams.get(7).getPlayer(3), teams.get(7).getPlayer(1), teams.get(7).getPlayer(2)});
 
 	teams.add(new team("Autolik Autonomy"));
 	teams.get(8).addPlayer(new player(1 ,10 ,7 ,1 ,1 ,3 ,9 ,8 ,8 ,5 ,7 ,7 ,"Boolway", true));
@@ -294,7 +295,7 @@ public class createTeams implements Serializable
 	teams.get(16).addPlayer(new player(4 ,3 ,3 ,7 ,7 ,6 ,2 ,7 ,2 ,8 ,5 ,5 ,"Aiyota Player #9", false));
 	teams.get(16).addPlayer(new player(2 ,7 ,6 ,5 ,5 ,6 ,3 ,2 ,7 ,5 ,5 ,8 ,"Amari Yakumo", false));
 	teams.get(16).addPlayer(new player(3 ,5 ,6 ,5 ,5 ,7 ,5 ,6 ,7 ,4 ,5 ,8 ,"Small Forward #159", false));
-	teams.add(new team("Ãvura Aviators"));
+	teams.add(new team("Avura Aviators"));
 	teams.get(17).addPlayer(new player(1 ,7 ,9 ,5 ,2 ,4 ,7 ,8 ,8 ,8 ,2 ,8 ,"Omumiba Keget", true));
 	teams.get(17).addPlayer(new player(2 ,10 ,3 ,6 ,6 ,4 ,8 ,7 ,8 ,8 ,5 ,8 ,"Tibiziŋag Ifet", true));
 	teams.get(17).addPlayer(new player(3 ,9 ,9 ,5 ,6 ,9 ,8 ,8 ,8 ,7 ,9 ,7 ,"Kilik Farhje", true));
@@ -342,6 +343,7 @@ public class createTeams implements Serializable
 	teams.get(19).addPlayer(new player(3 ,4 ,4 ,10 ,10 ,5 ,5 ,6 ,5 ,8 ,5 ,5 ,"Volker Kluck", false));
 	teams.get(19).addPlayer(new player(4 ,3 ,2 ,9 ,9 ,4 ,1 ,6 ,1 ,10 ,5 ,9 ,"Pakomha Nhoñsła", false));
 	teams.get(19).addPlayer(new player(5 ,6 ,6 ,6 ,10 ,8 ,7 ,4 ,2 ,5 ,10 ,9 ,"Phetdum Vongsay", false));
+	teams.get(19).setPresets(new player[]{teams.get(19).getPlayer(2), teams.get(19).getPlayer(4), teams.get(19).getPlayer(1), teams.get(19).getPlayer(2)});
 	teams.add(new team("Ethanthova Ponies"));
 	teams.get(20).addPlayer(new player(1 ,5 ,9 ,2 ,2 ,5 ,10 ,5 ,10 ,6 ,5 ,6 ,"Ethanthova Player #4", true));
 	teams.get(20).addPlayer(new player(2 ,8 ,4 ,1 ,1 ,3 ,10 ,7 ,10 ,7 ,5 ,6 ,"Ethanthova Player #3", true));
@@ -406,7 +408,7 @@ public class createTeams implements Serializable
 	teams.get(23).addPlayer(new player(4 ,7 ,1 ,9 ,9 ,7 ,1 ,3 ,1 ,4 ,5 ,9 ,"TND Player #6", false));
 	teams.get(23).addPlayer(new player(5 ,5 ,2 ,8 ,8 ,8 ,7 ,7 ,4 ,7 ,5 ,5 ,"TND Player #3", false));
 	teams.get(23).addPlayer(new player(1 ,5 ,5 ,1 ,1 ,5 ,6 ,7 ,8 ,2 ,5 ,7 ,"TND Player #9", false));
-	
+
 	teams.add(new team("Bongatar Banging Bongos"));
 	teams.get(24).addPlayer(new player(1 ,10 ,9 ,4 ,2 ,4 ,8 ,9 ,13 ,8 ,5 ,6 ,"Kalani Saysamongdy", true));
 	teams.get(24).addPlayer(new player(2 ,10 ,5 ,6 ,6 ,4 ,10 ,7 ,8 ,7 ,5 ,5 ,"Dvinme Player #11", true));
@@ -535,110 +537,340 @@ public class createTeams implements Serializable
 	teams.get(31).addPlayer(new player(3 ,9 ,4 ,9 ,9 ,1 ,4 ,9 ,9 ,1 ,5 ,9 ,"Ceokmihza the Igniter", false));
 	teams.get(31).addPlayer(new player(4 ,5 ,2 ,7 ,7 ,6 ,10 ,4 ,3 ,8 ,5 ,10 ,"Kmeav'hsoe the Wretched", false));
 	teams.get(31).addPlayer(new player(3 ,4 ,6 ,8 ,10 ,8 ,7 ,6 ,6 ,9 ,8 ,8 ,"Kalani Phanivong", false));
+
+	teams.get(0).setExpenses(new double[]{88.7, 17.7, 11});
+	teams.get(16).setExpenses(new double[]{74.6, 15.5, 11});
+	teams.get(1).setExpenses(new double[]{99.8, 16.8, 11});
+	teams.get(8).setExpenses(new double[]{87.5, 16.1, 11});
+	teams.get(17).setExpenses(new double[]{94, 17.2, 11});
+	teams.get(9).setExpenses(new double[]{90.2, 15.8, 11});
+	teams.get(10).setExpenses(new double[]{78.4, 18.3, 11});
+	teams.get(18).setExpenses(new double[]{65.2, 18.3, 11});
+	teams.get(24).setExpenses(new double[]{76.4, 17.8, 11});
+	teams.get(2).setExpenses(new double[]{99.2, 17.2, 11});
+	teams.get(25).setExpenses(new double[]{91.5, 18.3, 11});
+	teams.get(19).setExpenses(new double[]{91.2, 18, 11});
+	teams.get(26).setExpenses(new double[]{99.8, 16.1, 11});
+	teams.get(20).setExpenses(new double[]{94.5, 18.3, 11});
+	teams.get(21).setExpenses(new double[]{86.5, 15.9, 11});
+	teams.get(3).setExpenses(new double[]{77, 19.5, 11});
+	teams.get(27).setExpenses(new double[]{86.8, 17.2, 11});
+	teams.get(28).setExpenses(new double[]{97.6, 17.5, 11});
+	teams.get(11).setExpenses(new double[]{70.2, 15.9, 11});
+	teams.get(4).setExpenses(new double[]{66.6, 18.7, 11});
+	teams.get(29).setExpenses(new double[]{83.4, 15.8, 11});
+	teams.get(5).setExpenses(new double[]{80.8, 15.1, 11});
+	teams.get(12).setExpenses(new double[]{77, 17.3, 11});
+	teams.get(30).setExpenses(new double[]{80.8, 19.3, 11});
+	teams.get(13).setExpenses(new double[]{73.4, 17.7, 11});
+	teams.get(6).setExpenses(new double[]{76.8, 18.3, 11});
+	teams.get(14).setExpenses(new double[]{99.5, 18.3, 11});
+	teams.get(15).setExpenses(new double[]{82.4, 17.2, 11});
+	teams.get(7).setExpenses(new double[]{97.5, 19.4, 11});
+	teams.get(22).setExpenses(new double[]{80.9, 16.1, 11});
+	teams.get(23).setExpenses(new double[]{82.3, 15.4, 11});
+	teams.get(31).setExpenses(new double[]{90.1, 16.1, 11});
+
+
+	teams.get(0).setSponserMoney(5000);
+	teams.get(0).setWeeklySponser(1000000);
+	teams.get(0).addSponsers(new double[]{2500,1000});
+	teams.get(1).setSponserMoney(5000);
+	teams.get(1).setWeeklySponser(2500000);
+	teams.get(1).addSponsers(new double[]{2500,1000});
+	teams.get(2).setSponserMoney(5000);
+	teams.get(2).setWeeklySponser(2500000);
+	teams.get(2).addSponsers(new double[]{2500,1000});
+	teams.get(3).setSponserMoney(5000);
+	teams.get(3).setWeeklySponser(1000000);
+	teams.get(3).addSponsers(new double[]{2500,1000});
+	teams.get(4).setSponserMoney(5000);
+	teams.get(4).setWeeklySponser(1000000);
+	teams.get(4).addSponsers(new double[]{2500,1000});
+	teams.get(5).setSponserMoney(5000);
+	teams.get(5).setWeeklySponser(1000000);
+	teams.get(5).addSponsers(new double[]{2500,1000});
+	teams.get(6).setSponserMoney(5000);
+	teams.get(6).setWeeklySponser(1000000);
+	teams.get(6).addSponsers(new double[]{2500,1000});
+	teams.get(7).setSponserMoney(5000);
+	teams.get(7).setWeeklySponser(1000000);
+	teams.get(7).addSponsers(new double[]{2500,1000});
+	teams.get(8).setSponserMoney(5000);
+	teams.get(8).setWeeklySponser(1000000);
+	teams.get(8).addSponsers(new double[]{2500,1000});
+	teams.get(9).setSponserMoney(5000);
+	teams.get(9).setWeeklySponser(1000000);
+	teams.get(9).addSponsers(new double[]{2500,1000});
+	teams.get(10).setSponserMoney(5000);
+	teams.get(10).setWeeklySponser(1000000);
+	teams.get(10).addSponsers(new double[]{2500,1000});
+	teams.get(11).setSponserMoney(5000);
+	teams.get(11).setWeeklySponser(1000000);
+	teams.get(11).addSponsers(new double[]{2500,1000});
+	teams.get(12).setSponserMoney(5000);
+	teams.get(12).setWeeklySponser(1000000);
+	teams.get(12).addSponsers(new double[]{2500,1000});
+	teams.get(13).setSponserMoney(5000);
+	teams.get(13).setWeeklySponser(1000000);
+	teams.get(13).addSponsers(new double[]{2500,1000});
+	teams.get(14).setSponserMoney(5000);
+	teams.get(14).setWeeklySponser(500000);
+	teams.get(14).addSponsers(new double[]{2500,1000});
+	teams.get(15).setSponserMoney(5000);
+	teams.get(15).setWeeklySponser(1000000);
+	teams.get(15).addSponsers(new double[]{2500,1000});
+	teams.get(16).setSponserMoney(5000);
+	teams.get(16).setWeeklySponser(1000000);
+	teams.get(16).addSponsers(new double[]{2500,1000});
+	teams.get(17).setSponserMoney(5000);
+	teams.get(17).setWeeklySponser(1000000);
+	teams.get(17).addSponsers(new double[]{2500,1000});
+	teams.get(18).setSponserMoney(5000);
+	teams.get(18).setWeeklySponser(1000000);
+	teams.get(18).addSponsers(new double[]{2500,1000});
+	teams.get(19).setSponserMoney(5000);
+	teams.get(19).setWeeklySponser(1000000);
+	teams.get(19).addSponsers(new double[]{2500,1000});
+	teams.get(20).setSponserMoney(5000);
+	teams.get(20).setWeeklySponser(1000000);
+	teams.get(20).addSponsers(new double[]{2500,1000});
+	teams.get(21).setSponserMoney(5000);
+	teams.get(21).setWeeklySponser(1000000);
+	teams.get(21).addSponsers(new double[]{2500,1000});
+	teams.get(22).setSponserMoney(5000);
+	teams.get(22).setWeeklySponser(1000000);
+	teams.get(22).addSponsers(new double[]{2500,1000});
+	teams.get(23).setSponserMoney(5000);
+	teams.get(23).setWeeklySponser(1000000);
+	teams.get(23).addSponsers(new double[]{2500,1000});
+	teams.get(24).setSponserMoney(5000);
+	teams.get(24).setWeeklySponser(500000);
+	teams.get(24).addSponsers(new double[]{2500,1000});
+	teams.get(25).setSponserMoney(5000);
+	teams.get(25).setWeeklySponser(1000000);
+	teams.get(25).addSponsers(new double[]{2500,1000});
+	teams.get(26).setSponserMoney(5000);
+	teams.get(26).setWeeklySponser(2500000);
+	teams.get(26).addSponsers(new double[]{2500,1000});
+	teams.get(27).setSponserMoney(5000);
+	teams.get(27).setWeeklySponser(1000000);
+	teams.get(27).addSponsers(new double[]{2500,1000});
+	teams.get(28).setSponserMoney(5000);
+	teams.get(28).setWeeklySponser(2500000);
+	teams.get(28).addSponsers(new double[]{2500,1000});
+	teams.get(29).setSponserMoney(5000);
+	teams.get(29).setWeeklySponser(1000000);
+	teams.get(29).addSponsers(new double[]{2500,1000});
+	teams.get(30).setSponserMoney(5000);
+	teams.get(30).setWeeklySponser(1000000);
+	teams.get(30).addSponsers(new double[]{2500,1000});
+	teams.get(31).setSponserMoney(5000);
+	teams.get(31).setWeeklySponser(1000000);
+	teams.get(31).addSponsers(new double[]{2500,1000});
+
+	teams.get(0).createStadium(new float[]{30, 100, 450, 1000});
+	teams.get(16).createStadium(new float[]{30, 120, 450, 1000});
+	teams.get(1).createStadium(new float[]{40, 100, 550, 1250});
+	teams.get(8).createStadium(new float[]{35, 90, 450, 1000});
+	teams.get(17).createStadium(new float[]{30, 90, 600, 1200});
+	teams.get(9).createStadium(new float[]{20, 120, 350, 1000});
+	teams.get(10).createStadium(new float[]{40, 100, 350, 1000});
+	teams.get(18).createStadium(new float[]{30, 100, 550, 1000});
+	teams.get(24).createStadium(new float[]{30, 120, 550, 900});
+	teams.get(2).createStadium(new float[]{25, 125, 400, 1000});
+	teams.get(25).createStadium(new float[]{25, 110, 600, 1000});
+	teams.get(19).createStadium(new float[]{15, 120, 650, 1500});
+	teams.get(26).createStadium(new float[]{40, 150, 700, 1500});
+	teams.get(20).createStadium(new float[]{20, 105, 400, 1250});
+	teams.get(21).createStadium(new float[]{(float) 27.5, 120, 500, 1500});
+	teams.get(3).createStadium(new float[]{20, 90, 600, 900});
+	teams.get(27).createStadium(new float[]{20, 115, 450, 800});
+	teams.get(28).createStadium(new float[]{40, 105, 350, 1000});
+	teams.get(11).createStadium(new float[]{25, 45, 400, 1000});
+	teams.get(4).createStadium(new float[]{30, 110, 500, 750});
+	teams.get(29).createStadium(new float[]{35, 115, 450, 800});
+	teams.get(5).createStadium(new float[]{20, 160, 400, 1500});
+	teams.get(12).createStadium(new float[]{35, 90, 400, 1200});
+	teams.get(30).createStadium(new float[]{25, 120, 350, 1000});
+	teams.get(13).createStadium(new float[]{35, 100, 350, 1000});
+	teams.get(6).createStadium(new float[]{25, 125, 350, 1000});
+	teams.get(14).createStadium(new float[]{25, 105, 600, 950});
+	teams.get(15).createStadium(new float[]{30, 115, 350, 900});
+	teams.get(7).createStadium(new float[]{15, 80, 500, 1250});
+	teams.get(22).createStadium(new float[]{30, 125, 600, 1000});
+	teams.get(23).createStadium(new float[]{35, 115, 500, 1000});
+	teams.get(31).createStadium(new float[]{30, 110, 450, 1000});
 	
-	teams.get(0).addCoach(new Coach("Coach #1", 69, 86, 0.9, 27, -0.4, 11, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.HIGH));
-	teams.get(1).addCoach(new Coach("Coach #2", 59, 94, -0.1, 28, 0.8, 7, Tempo.MEDIUM, coachShotType.BALANCED, ssInvolvment.LOW));
-	teams.get(2).addCoach(new Coach("Coach #3", 62, 100, 0.4, 16, 0.2, 30, Tempo.MEDIUM, coachShotType.BALANCED, ssInvolvment.MEDIUM));
-	teams.get(3).addCoach(new Coach("Coach #4", 83, 93, -0.6, 19, 0.2, 26, Tempo.MEDIUM, coachShotType.INSIDE, ssInvolvment.HIGH));
-	teams.get(4).addCoach(new Coach("Coach #5", 85, 99, 0.6, 11, 0.5, 7, Tempo.MEDIUM, coachShotType.BALANCED, ssInvolvment.HIGH));
-	teams.get(5).addCoach(new Coach("Coach #6", 59, 84, 0.8, 6, 0.9, 28, Tempo.MEDIUM, coachShotType.BALANCED, ssInvolvment.MEDIUM));
-	teams.get(6).addCoach(new Coach("Coach #7", 65, 99, 0.3, 29, -0.8, 13, Tempo.MEDIUM, coachShotType.OUTSIDE, ssInvolvment.HIGH));
-	teams.get(7).addCoach(new Coach("Coach #8", 73, 86, -0.7, 16, -0.6, 5, Tempo.FAST, coachShotType.BALANCED, ssInvolvment.HIGH));
-	teams.get(8).addCoach(new Coach("Coach #9", 54, 92, 0.3, 5, -0.8, 24, Tempo.FAST, coachShotType.BALANCED, ssInvolvment.LOW));
-	teams.get(9).addCoach(new Coach("Coach #10", 65, 89, 0, 12, 0.9, 29, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.MEDIUM));
-	teams.get(10).addCoach(new Coach("Coach #11", 82, 94, 0.7, 14, -0.3, 13, Tempo.FAST, coachShotType.BALANCED, ssInvolvment.MEDIUM));
-	teams.get(11).addCoach(new Coach("Coach #12", 80, 91, 0.9, 23, 0, 29, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.MEDIUM));
-	teams.get(12).addCoach(new Coach("Coach #13", 65, 92, 0.7, 7, 0.8, 10, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.MEDIUM));
-	teams.get(13).addCoach(new Coach("Coach #14", 73, 86, 0.2, 10, -0.3, 30, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.HIGH));
-	teams.get(14).addCoach(new Coach("Coach #15", 55, 92, 0.3, 18, 0.6, 26, Tempo.FAST, coachShotType.BALANCED, ssInvolvment.HIGH));
-	teams.get(15).addCoach(new Coach("Coach #16", 57, 89, 0.4, 22, 0.1, 16, Tempo.SLOW, coachShotType.OUTSIDE, ssInvolvment.MEDIUM));
-	teams.get(16).addCoach(new Coach("Coach #17", 59, 92, 0.4, 7, 0.8, 24, Tempo.FAST, coachShotType.OUTSIDE, ssInvolvment.LOW));
-	teams.get(17).addCoach(new Coach("Coach #18", 71, 92, 0.2, 22, 0.5, 13, Tempo.MEDIUM, coachShotType.BALANCED, ssInvolvment.LOW));
-	teams.get(18).addCoach(new Coach("Coach #19", 56, 82, 0.9, 30, -0.4, 22, Tempo.MEDIUM, coachShotType.INSIDE, ssInvolvment.MEDIUM));
-	teams.get(19).addCoach(new Coach("Coach #20", 69, 90, -1, 28, 0, 26, Tempo.MEDIUM, coachShotType.BALANCED, ssInvolvment.LOW));
-	teams.get(20).addCoach(new Coach("Coach #21", 68, 99, -0.2, 5, 1, 11, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.MEDIUM));
-	teams.get(21).addCoach(new Coach("Coach #22", 56, 89, 0.1, 5, 0.5, 11, Tempo.MEDIUM, coachShotType.BALANCED, ssInvolvment.LOW));
-	teams.get(22).addCoach(new Coach("Coach #23", 73, 85, -0.3, 11, -0.4, 29, Tempo.MEDIUM, coachShotType.BALANCED, ssInvolvment.MEDIUM));
-	teams.get(23).addCoach(new Coach("Coach #24", 83, 100, 0.8, 16, 0, 29, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.MEDIUM));
-	teams.get(24).addCoach(new Coach("Coach #25", 54, 91, 0.1, 17, 0.3, 10, Tempo.MEDIUM, coachShotType.INSIDE, ssInvolvment.LOW));
-	teams.get(25).addCoach(new Coach("Coach #26", 70, 90, -0.5, 19, -0.2, 28, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.LOW));
-	teams.get(26).addCoach(new Coach("Coach #27", 80, 92, 0.9, 24, -0.4, 6, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.HIGH));
-	teams.get(27).addCoach(new Coach("Coach #28", 83, 96, 0.9, 30, -1, 19, Tempo.SLOW, coachShotType.OUTSIDE, ssInvolvment.LOW));
-	teams.get(28).addCoach(new Coach("Coach #29", 73, 90, -0.2, 29, -1, 23, Tempo.SLOW, coachShotType.INSIDE, ssInvolvment.LOW));
-	teams.get(29).addCoach(new Coach("Coach #30", 53, 92, 0.7, 11, 0.3, 15, Tempo.MEDIUM, coachShotType.OUTSIDE, ssInvolvment.LOW));
-	teams.get(30).addCoach(new Coach("Coach #31", 76, 89, -0.7, 10, -0.6, 26, Tempo.MEDIUM, coachShotType.BALANCED, ssInvolvment.LOW));
-	teams.get(31).addCoach(new Coach("Coach #32", 45, 91, -0.3, 17, -0.6, 22, Tempo.MEDIUM, coachShotType.OUTSIDE, ssInvolvment.MEDIUM));
-	
+	teams.get(0).getStadium().startConcessions("Cotton Candy", 3.5, "Beer", 7.5);
+	teams.get(16).getStadium().startConcessions("Nachos", 4.5, "Beer", 7.5);
+	teams.get(1).getStadium().startConcessions("Popcorn", 6.25, "Coffee", 4);
+	teams.get(8).getStadium().startConcessions("Popcorn", 6.25, "Soda", 4);
+	teams.get(17).getStadium().startConcessions("Ice Cream", 5.5, "Soda", 4);
+	teams.get(9).getStadium().startConcessions("Cotton Candy", 3.5, "Beer", 7.5);
+	teams.get(10).getStadium().startConcessions("Pizza", 6, "Water", 3);
+	teams.get(18).getStadium().startConcessions("French Fries", 4, "Icees", 5.5);
+	teams.get(24).getStadium().startConcessions("Churros", 3.5, "Beer", 7.5);
+	teams.get(2).getStadium().startConcessions("Cotton Candy", 3.5, "Water", 3);
+	teams.get(25).getStadium().startConcessions("Ice Cream", 5.5, "Soda", 4);
+	teams.get(19).getStadium().startConcessions("Hotdogs", 3.5, "Milkshake", 5);
+	teams.get(26).getStadium().startConcessions("Popcorn", 6.25, "Water", 3);
+	teams.get(20).getStadium().startConcessions("Hamburgers", 7, "Water", 3);
+	teams.get(21).getStadium().startConcessions("Ice Cream", 5.5, "Soda", 4);
+	teams.get(3).getStadium().startConcessions("Ice Cream", 5.5, "Beer", 7.5);
+	teams.get(27).getStadium().startConcessions("Chips", 4, "Soda", 4);
+	teams.get(28).getStadium().startConcessions("Pretzels", 5, "Water", 3);
+	teams.get(11).getStadium().startConcessions("Chips", 4, "Coffee", 4);
+	teams.get(4).getStadium().startConcessions("Hamburgers", 7, "Sports Drink", 4.5);
+	teams.get(29).getStadium().startConcessions("Cookies", 3.5, "Lemonade", 5);
+	teams.get(5).getStadium().startConcessions("Fries", 5, "Lemonade", 5);
+	teams.get(12).getStadium().startConcessions("Cotton Candy", 3.5, "Beer", 7.5);
+	teams.get(30).getStadium().startConcessions("Pizza", 6, "Soda", 4);
+	teams.get(13).getStadium().startConcessions("Chips", 4, "Soda", 4);
+	teams.get(6).getStadium().startConcessions("Popcorn", 6.25, "Soda", 4);
+	teams.get(14).getStadium().startConcessions("Pizza", 6, "Coffee", 4);
+	teams.get(15).getStadium().startConcessions("Cookies", 3.5, "Water", 3);
+	teams.get(7).getStadium().startConcessions("Nachos", 4, "Soda", 3);
+	teams.get(22).getStadium().startConcessions("Hotdogs", 6.75, "Soda", 4);
+	teams.get(23).getStadium().startConcessions("Cookies", 3.5, "Beer", 7.5);
+	teams.get(31).getStadium().startConcessions("Churros", 3.5, "Sports Drink", 4.5);
+
+	teams.get(0).addCoach(new Coach("Coach #5", 85, 99,  0.6, 11, 0.5, 7, Tempo.MEDIUM, coachShotType.BALANCED, ssInvolvment.HIGH));
+	teams.get(16).addCoach(new Coach("Coach #8", 73, 86,  -0.7, 16, -0.6, 5, Tempo.FAST, coachShotType.BALANCED, ssInvolvment.HIGH));
+	teams.get(1).addCoach(new Coach("Coach #19", 56, 82,  0.9, 30, -0.4, 22, Tempo.MEDIUM, coachShotType.INSIDE, ssInvolvment.MEDIUM));
+	teams.get(8).addCoach(new Coach("Coach #14", 73, 86,  0.2, 10, -0.3, 30, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.HIGH));
+	teams.get(17).addCoach(new Coach("Coach #15", 55, 92,  0.3, 18, 0.6, 26, Tempo.FAST, coachShotType.BALANCED, ssInvolvment.HIGH));
+	teams.get(9).addCoach(new Coach("Coach #23", 73, 85,  -0.3, 11, -0.4, 29, Tempo.MEDIUM, coachShotType.BALANCED, ssInvolvment.MEDIUM));
+	teams.get(10).addCoach(new Coach("Coach #35", 54, 87,  -0.1, 21, -0.3, 22, Tempo.MEDIUM, coachShotType.INSIDE, ssInvolvment.MEDIUM));
+	teams.get(18).addCoach(new Coach("Coach #40", 48, 93,  -0.8, 15, 0.4, 5, Tempo.MEDIUM, coachShotType.INSIDE, ssInvolvment.HIGH));
+	teams.get(24).addCoach(new Coach("Coach #12", 80, 91,  0.9, 23, 0, 29, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.MEDIUM));
+	teams.get(2).addCoach(new Coach("Coach #24", 83, 100,  0.8, 16, 0, 29, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.MEDIUM));
+	teams.get(25).addCoach(new Coach("Coach #17", 59, 92,  0.4, 7, 0.8, 24, Tempo.FAST, coachShotType.OUTSIDE, ssInvolvment.LOW));
+	teams.get(19).addCoach(new Coach("Coach #34", 75, 88,  0.8, 30, 0.3, 19, Tempo.MEDIUM, coachShotType.INSIDE, ssInvolvment.MEDIUM));
+	teams.get(26).addCoach(new Coach("Coach #13", 65, 92,  0.7, 7, 0.8, 10, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.MEDIUM));
+	teams.get(20).addCoach(new Coach("Coach #16", 57, 89,  0.4, 22, 0.1, 16, Tempo.SLOW, coachShotType.OUTSIDE, ssInvolvment.MEDIUM));
+	teams.get(21).addCoach(new Coach("Coach #10", 65, 89,  0, 12, 0.9, 29, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.MEDIUM));
+	teams.get(3).addCoach(new Coach("Coach #18", 71, 92,  0.2, 22, 0.5, 13, Tempo.MEDIUM, coachShotType.BALANCED, ssInvolvment.LOW));
+	teams.get(27).addCoach(new Coach("Coach #21", 68, 99,  -0.2, 5, 1, 11, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.MEDIUM));
+	teams.get(28).addCoach(new Coach("Coach #1", 59, 90,  0.9, 27, -0.4, 11, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.HIGH));
+	teams.get(11).addCoach(new Coach("Coach #28", 83, 96,  0.9, 30, -1, 19, Tempo.SLOW, coachShotType.OUTSIDE, ssInvolvment.LOW));
+	teams.get(4).addCoach(new Coach("Coach #25", 54, 91,  0.1, 17, 0.3, 10, Tempo.MEDIUM, coachShotType.INSIDE, ssInvolvment.LOW));
+	teams.get(29).addCoach(new Coach("Coach #22", 56, 89,  0.1, 5, 0.5, 11, Tempo.MEDIUM, coachShotType.BALANCED, ssInvolvment.LOW));
+	teams.get(5).addCoach(new Coach("Coach #33", 71, 84,  -0.5, 6, 0.8, 19, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.MEDIUM));
+	teams.get(12).addCoach(new Coach("Coach #26", 70, 90,  -0.5, 19, -0.2, 28, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.LOW));
+	teams.get(30).addCoach(new Coach("Coach #32", 45, 91,  -0.3, 17, -0.6, 22, Tempo.MEDIUM, coachShotType.OUTSIDE, ssInvolvment.MEDIUM));
+	teams.get(13).addCoach(new Coach("Coach #7", 65, 99,  0.3, 29, -0.8, 13, Tempo.MEDIUM, coachShotType.OUTSIDE, ssInvolvment.HIGH));
+	teams.get(6).addCoach(new Coach("Coach #30", 53, 92,  0.7, 11, 0.3, 15, Tempo.MEDIUM, coachShotType.OUTSIDE, ssInvolvment.LOW));
+	teams.get(14).addCoach(new Coach("Coach #27", 80, 92,  0.9, 24, -0.4, 6, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.HIGH));
+	teams.get(15).addCoach(new Coach("Coach #38", 84, 100,  0.9, 7, -0.6, 26, Tempo.FAST, coachShotType.OUTSIDE, ssInvolvment.HIGH));
+	teams.get(7).addCoach(new Coach("Coach #3", 62, 100,  0.4, 16, 0.2, 30, Tempo.MEDIUM, coachShotType.BALANCED, ssInvolvment.MEDIUM));
+	teams.get(22).addCoach(new Coach("Coach #37", 56, 98,  -0.3, 9, 0, 7, Tempo.SLOW, coachShotType.BALANCED, ssInvolvment.LOW));
+	teams.get(23).addCoach(new Coach("Coach #2", 59, 94,  -0.1, 28, 0.8, 7, Tempo.MEDIUM, coachShotType.BALANCED, ssInvolvment.LOW));
+	teams.get(31).addCoach(new Coach("Coach #6", 59, 84,  0.8, 6, 0.9, 28, Tempo.MEDIUM, coachShotType.BALANCED, ssInvolvment.MEDIUM));
+
+	teams.get(0).addTrainer(new Trainer("Trainer #19", 7, 1,  0.691094914));
+	teams.get(16).addTrainer(new Trainer("Trainer #35", 10, 4,  0.57251146));
+	teams.get(1).addTrainer(new Trainer("Trainer #7", 5, 2,  0.117832176));
+	teams.get(8).addTrainer(new Trainer("Trainer #20", 10, 10,  0.503985209));
+	teams.get(17).addTrainer(new Trainer("Trainer #1", 1, 7,  0.266258933));
+	teams.get(9).addTrainer(new Trainer("Trainer #31", 4, 9,  0.630190084));
+	teams.get(10).addTrainer(new Trainer("Trainer #11", 3, 1,  0.446068207));
+	teams.get(18).addTrainer(new Trainer("Trainer #27", 7, 8,  -0.581974201));
+	teams.get(24).addTrainer(new Trainer("Trainer #16", 2, 7,  0.787548972));
+	teams.get(2).addTrainer(new Trainer("Trainer #2", 10, 2,  0.285976864));
+	teams.get(25).addTrainer(new Trainer("Trainer #32", 5, 3,  -0.075495402));
+	teams.get(19).addTrainer(new Trainer("Trainer #9", 8, 7,  0.428944579));
+	teams.get(26).addTrainer(new Trainer("Trainer #26", 6, 3,  0.79609261));
+	teams.get(20).addTrainer(new Trainer("Trainer #24", 1, 5,  0.124362683));
+	teams.get(21).addTrainer(new Trainer("Trainer #14", 3, 8,  0.0871004));
+	teams.get(3).addTrainer(new Trainer("Trainer #5", 8, 1,  -0.257724291));
+	teams.get(27).addTrainer(new Trainer("Trainer #15", 8, 7,  -0.444167258));
+	teams.get(28).addTrainer(new Trainer("Trainer #33", 8, 5,  0.694395937));
+	teams.get(11).addTrainer(new Trainer("Trainer #34", 5, 8,  -0.073032337));
+	teams.get(4).addTrainer(new Trainer("Trainer #18", 9, 1,  -0.230108126));
+	teams.get(29).addTrainer(new Trainer("Trainer #37", 2, 8,  -0.486536665));
+	teams.get(5).addTrainer(new Trainer("Trainer #40", 5, 2,  0.218518853));
+	teams.get(12).addTrainer(new Trainer("Trainer #39", 6, 4,  0.371777967));
+	teams.get(30).addTrainer(new Trainer("Trainer #25", 2, 8,  0.336946596));
+	teams.get(13).addTrainer(new Trainer("Trainer #8", 3, 1,  0.596611974));
+	teams.get(6).addTrainer(new Trainer("Trainer #3", 6, 1,  0.332918203));
+	teams.get(14).addTrainer(new Trainer("Trainer #30", 6, 3,  0.477191344));
+	teams.get(15).addTrainer(new Trainer("Trainer #22", 2, 5,  0.350137071));
+	teams.get(7).addTrainer(new Trainer("Trainer #36", 9, 8,  0.126761463));
+	teams.get(22).addTrainer(new Trainer("Trainer #29", 9, 1,  0.072649528));
+	teams.get(23).addTrainer(new Trainer("Trainer #17", 8, 1,  0.989996664));
+	teams.get(31).addTrainer(new Trainer("Trainer #12", 10, 4,  -0.88818582));
+
 	teams.get(0).setTeamResults(new teamResults(new int[] {25, 12, 13}));
-	
+
 	teams.get(1).setTeamResults(new teamResults(new int[] {20, 2, 2}));
-	
+
 	teams.get(2).setTeamResults(new teamResults(new int[] {2, 4, 5}));
-	
+
 	teams.get(3).setTeamResults(new teamResults(new int[] {26, 11, 26}));
-	
+
 	teams.get(4).setTeamResults(new teamResults(new int[] {15, 20, 30}));
-	
+
 	teams.get(5).setTeamResults(new teamResults(new int[] {32, 6, 14}));
-	
+
 	teams.get(6).setTeamResults(new teamResults(new int[] {18, 23, 8}));
-	
+
 	teams.get(7).setTeamResults(new teamResults(new int[] {4, 10, 3}));
-	
+
 	teams.get(8).setTeamResults(new teamResults(new int[] {29, 16, 21}));
-	
+
 	teams.get(9).setTeamResults(new teamResults(new int[] {27, 8, 10}));
-	
+
 	teams.get(10).setTeamResults(new teamResults(new int[] {10, 18, 17}));
-	
+
 	teams.get(11).setTeamResults(new teamResults(new int[] {8, 29, 27}));
-	
+
 	teams.get(12).setTeamResults(new teamResults(new int[] {12, 25, 15}));
-	
+
 	teams.get(13).setTeamResults(new teamResults(new int[] {14, 27, 19}));
-	
+
 	teams.get(14).setTeamResults(new teamResults(new int[] {23, 31, 32}));
-	
+
 	teams.get(15).setTeamResults(new teamResults(new int[] {6, 13, 11}));
-	
+
 	teams.get(16).setTeamResults(new teamResults(new int[] {24, 24, 7}));
-	
+
 	teams.get(17).setTeamResults(new teamResults(new int[] {3, 7, 18}));
-	
+
 	teams.get(18).setTeamResults(new teamResults(new int[] {22, 32, 31}));
-	
+
 	teams.get(19).setTeamResults(new teamResults(new int[] {9, 5, 6}));
-	
+
 	teams.get(20).setTeamResults(new teamResults(new int[] {5, 9, 9}));
-	
+
 	teams.get(21).setTeamResults(new teamResults(new int[] {7, 17, 22}));
-	
+
 	teams.get(22).setTeamResults(new teamResults(new int[] {21, 22, 23}));
-	
+
 	teams.get(23).setTeamResults(new teamResults(new int[] {13, 19, 29}));
-	
+
 	teams.get(24).setTeamResults(new teamResults(new int[] {16, 26, 28}));
-	
+
 	teams.get(25).setTeamResults(new teamResults(new int[] {19, 28, 16}));
-	
+
 	teams.get(26).setTeamResults(new teamResults(new int[] {1, 1, 1}));
-	
+
 	teams.get(27).setTeamResults(new teamResults(new int[] {31, 30, 25}));
-	
+
 	teams.get(28).setTeamResults(new teamResults(new int[] {17, 15, 4}));
-	
+
 	teams.get(29).setTeamResults(new teamResults(new int[] {11, 21, 24}));
-	
+
 	teams.get(30).setTeamResults(new teamResults(new int[] {28, 3, 12}));
-	
+
 	teams.get(31).setTeamResults(new teamResults(new int[] {30, 14, 20}));
-	
-	
-	
+
+
+
 	/*
 	teams.add(new team("10 Durability"));
 	teams.add(new team("1 Durability"));
-	
+
 	teams.get(32).addPlayer(new player(1 ,10 ,1 ,1 ,1 ,1 ,1 ,1 ,1,1,10 ,5 ,"10", true));
 	teams.get(32).addPlayer(new player(2 ,10 ,1 ,1 ,1 ,1 ,1 ,1 ,1,1,10 ,5 ,"10", true));
 	teams.get(32).addPlayer(new player(3 ,10 ,1 ,1 ,1 ,1 ,1 ,1 ,1,1,10 ,5 ,"10", true));
@@ -671,7 +903,7 @@ public class createTeams implements Serializable
 	teams.get(33).addPlayer(new player(4 ,1 ,10 ,1 ,1 ,1 ,1 ,1 ,1,1,1 ,5 ,"", false));
 	teams.get(33).addPlayer(new player(5 ,1 ,10 ,1 ,1 ,1 ,1 ,1 ,1,1,1 ,5 ,"", false));
 
-	
+
 	teams.add(new team("10 Layup"));
 	teams.add(new team("10 Dunk"));
 	teams.add(new team("10 Jumpshot"));
@@ -681,7 +913,7 @@ public class createTeams implements Serializable
 	teams.add(new team("10 Jumping"));
 	teams.add(new team("10 Seperation"));
 	teams.add(new team("10 Stamina"));
-	
+
 	teams.get(32).addPlayer(new player(1 ,10 ,1 ,1 ,1 ,1 ,1 ,1 ,1,1,10 ,5 ,"", true));
 	teams.get(32).addPlayer(new player(2 ,10 ,1 ,1 ,1 ,1 ,1 ,1 ,1,1,10 ,5 ,"", true));
 	teams.get(32).addPlayer(new player(3 ,10 ,1 ,1 ,1 ,1 ,1 ,1 ,1,1,10 ,5 ,"", true));
@@ -850,7 +1082,7 @@ public class createTeams implements Serializable
 	teams.get(32).addPlayer(new player(5, 1, 3, 4, 7, 8, 7, 1, 6, 7, "Quartermarra", "", false));
 	teams.get(33).addPlayer(new player(5, 3, 3, 9, 5, 8, 6, 2, 7, 8, "Namia", "", false));
 	teams.get(32).addPlayer(new player(5, 5, 3, 8, 8, 4, 7, 4, 6, 8, "Paparto", "Subeina", true));
-	
+
 	teams.add(new team("Player Type team 1"));
 	teams.add(new team("Player Type team 2"));
 	teams.add(new team("Player Type team 3"));
@@ -870,7 +1102,7 @@ public class createTeams implements Serializable
 	teams.get(34).addPlayer(new player(1,6,6,1,2,9,8,9,4,7,"Rim Protector C", false));
 	teams.get(34).addPlayer(new player(1,7,9,1,1,8,6,9,2,8,"Athletic Center C", false));
 
-	
+
 	teams.get(35).addPlayer(new player(5,7,7,4,7,5,5,7,5,9,"Athletic Point PG", false));
 	teams.get(35).addPlayer(new player(5,6,2,7,9,4,7,3,5,8,"Playmaker PG", true));
 	teams.get(35).addPlayer(new player(5,5,2,8,5,4,4,3,8,8,"Shoot First PG", false));
@@ -903,15 +1135,15 @@ public class createTeams implements Serializable
 	teams.get(36).addPlayer(new player(1,6,6,1,2,9,8,9,4,7,"Rim Protector C", false));
 	teams.get(36).addPlayer(new player(1,7,9,1,1,8,6,9,2,8,"Athletic Center C", true));
 
-	
-	
+
+
 	Print theTeams = new Print(teams);
 
 	theTeams.printAllTeams();*/
 
 
 
-	
+
 	//createTeamTwo();
     }
     /*
@@ -933,13 +1165,13 @@ public class createTeams implements Serializable
 	teams.get(1).addPlayer(new player(5, 1, 8, 2, 4, 2, 10, 10, 6, 7, "First", "Last", false));
 
 
-	
-	
+
+
     }
-    */
+     */
     public team getTeam(int teamNum)
     {
-        return teams.get(teamNum);
+	return teams.get(teamNum);
     }
-    
+
 }

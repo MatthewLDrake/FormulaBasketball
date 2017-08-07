@@ -1,38 +1,38 @@
 -----------------------------------------------------------
-| Barsein Bats              | 27 | 33 | 34 | 28 | 0 | 122 |
-| Holykol Bears             | 28 | 34 | 32 | 30 | 0 | 124 |
+| Barsein Bats              | 27 | 33 | 24 | 25 | 0 | 109 |
+| Holykol Bears             | 20 | 32 | 21 | 22 | 0 | 95  |
 -----------------------------------------------------------
 Barsein Bats
 POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
-C  Keon Saengsavang         35   14    6   13    6   46.2    0    0    4   2    3    1   15    3   12    2   17    9   52.9
-PF Keahi Saengsavang        32   14    3   14    7   50.0    0    0    0   0    0    1    8    1    7    0   11    9   81.8
-SF Matthew Grabochov        32   15    4    9    6   66.7    4    3    0   0    2    0    2    0    2    2   11    8   72.7
-SG pot                      40   30    5   20   14   70.0    5    2    0   0    1    0    4    0    4    0    6    1   16.7
-PG Danomobei Subeina        31   20   12   16    7   43.8    9    5    2   1    1    0    1    0    1    2   15    6   40.0
-PF Barsein Player #3         2    0    0    0    0    0.0    0    0    0   0    1    0    0    0    0    0    1    0   0.0
-PF Quinten Grabochov        13    2    0    2    0    0.0    0    0    2   2    0    0    4    0    4    0    5    5   100.0
-SG Barsein Player #1         7    0    0    4    0    0.0    0    0    0   0    0    0    1    0    1    0    3    3   100.0
-C  Yembeane                  8    2    0    3    1   33.3    0    0    0   0    1    0    3    1    2    2    3    3   100.0
-SF Barsein Player #7        12   10    1    6    3   50.0    3    3    1   1    0    0    0    0    0    0    3    2   66.7
-C  kalassak vekel álutep     4    0    0    0    0    0.0    0    0    0   0    0    0    1    0    1    1    4    4   100.0
-PG Keahi Siyavong            7   11    3    5    4   80.0    3    2    1   1    0    0    2    0    2    0    4    2   50.0
-PG Dimitri Lolant            8    4    4    4    2   50.0    0    0    0   0    0    0    1    0    1    0    6    6   100.0
-SF Om Kwang-Seok             2    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    1    1   100.0
+C  Keon Saengsavang         35    6    4    8    3   37.5    0    0    0   0    1    0   12    4    8    0   17   11   64.7
+PF Keahi Saengsavang        38   10    3    8    5   62.5    0    0    0   0    0    0    9    3    6    1   17   13   76.5
+SF Matthew Grabochov        41   33   14   21   14   66.7    9    5    0   0    0    0    2    1    1    1   13    5   38.5
+SG pot                      38   16   11   12    7   58.3    5    2    0   0    0    0    7    2    5    0   10    3   30.0
+PG Danomobei Subeina         0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PF Barsein Player #3        22   16    3   12    8   66.7    0    0    0   0    0    0    3    0    3    0    8    4   50.0
+PF Quinten Grabochov         3    0    3    1    0    0.0    0    0    0   0    1    0    1    0    1    0    0    0   0.0
+SG Barsein Player #1         9    4    2    3    2   66.7    0    0    0   0    0    0    1    0    1    0    2    2   100.0
+C  Yembeane                 13   12    0    9    6   66.7    0    0    0   0    0    0    2    1    1    1    5    0   0.0
+SF Barsein Player #7         0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  kalassak vekel álutep     0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PG Keahi Siyavong           30    9    5    8    3   37.5    4    3    0   0    1    0    2    0    2    0   14    7   50.0
+PG Dimitri Lolant            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF Om Kwang-Seok             6    3    1    2    1   50.0    1    1    0   0    0    0    0    0    0    0    0    0   0.0
 SG Yuguchi Tomiji            0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
 Holykol Bears
 POS NAME                    MIN  PTS  AST  FGA  FGM    FG%  3TA  3TM  FTA FTM   TO  STL  REB  ORB  DRB  FLS  OSA  OSM    OS%
-C  Ikaika Savang            36   26    8   17   13   76.5    0    0    0   0    1    0    7    4    3    0   12    6   50.0
-PF Konala Somphousiharath   36   22    6   12   11   91.7    0    0    0   0    1    0    9    2    7    1   14    7   50.0
-SF Jesse Svensson           36   16    6   11    8   72.7    0    0    0   0    1    1    2    0    2    2   12    8   66.7
-SG la                       35    9    5    9    4   44.4    2    0    0   0    0    0    2    0    2    1   19   10   52.6
-PG Red Rainbow Player #2    38   27   17   22   12   54.5    3    0    2   2    0    3    4    1    3    4   20    9   45.0
-SG Alwin Gradl               1    0    0    0    0    0.0    0    0    0   0    0    0    2    0    2    0    0    0   0.0
-PF dot                       8    6    3    4    3   75.0    0    0    0   0    0    0    1    0    1    1    2    0   0.0
-SF hax                      10    4    4    3    2   66.7    1    0    0   0    0    0    1    0    1    0    3    1   33.3
-C  Center #137               9    4    2    6    2   33.3    0    0    0   0    1    0    0    0    0    3    4    1   25.0
-C  Koa Savang                1    2    1    1    1   100.0    0    0    0   0    0    0    1    0    1    0    0    0   0.0
-SG Rusty Berry              10    0    2    0    0    0.0    0    0    0   0    0    0    2    1    1    0    5    4   80.0
-PG quj                       2    6    1    3    2   66.7    1    0    0   0    0    0    0    0    0    0    0    0   0.0
-PG Travis Traenfeglia        7    0    0    0    0    0.0    0    0    0   0    0    0    1    1    0    0    5    4   80.0
-SF Tsekon Wap't'ebw          1    2    0    1    1   100.0    0    0    0   0    0    0    2    0    2    0    0    0   0.0
-PF Lilo Thepsenavong         2    0    2    1    0    0.0    0    0    0   0    0    1    1    0    1    0    0    0   0.0
+C  Ikaika Savang            38   18    2   19    9   47.4    0    0    2   0    2    0    7    0    7    0   13    7   53.8
+PF Konala Somphousiharath   41   24    5   16   12   75.0    0    0    0   0    1    1    4    0    4    1   17   11   64.7
+SF Jesse Svensson           38    8    9   12    4   33.3    0    0    0   0    1    0   10    1    9    2   16   13   81.3
+SG la                       37   11    9   10    4   40.0    3    0    0   0    0    0    3    1    2    0   10    7   70.0
+PG Red Rainbow Player #2    40   26   12   23   12   52.2    2    0    0   0    1    0    8    2    6    0    7    2   28.6
+SG Alwin Gradl              10    2    1    2    1   50.0    1    0    0   0    0    0    0    0    0    0    5    2   40.0
+PF dot                       0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF hax                       0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Center #137               0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+C  Koa Savang                9    2    4    2    1   50.0    0    0    0   0    0    0    1    1    0    1    4    2   50.0
+SG Rusty Berry               0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+PG quj                       7    0    2    0    0    0.0    0    0    0   0    0    0    3    1    2    0    1    1   100.0
+PG Travis Traenfeglia        0    0    0    0    0    0.0    0    0    0   0    0    0    0    0    0    0    0    0   0.0
+SF Tsekon Wap't'ebw          9    2    0    1    1   100.0    0    0    0   0    0    0    1    1    0    1    7    2   28.6
+PF Lilo Thepsenavong         6    2    0    1    1   100.0    0    0    0   0    0    0    0    0    0    1    4    2   50.0
