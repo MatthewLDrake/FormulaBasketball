@@ -10,9 +10,14 @@ public class Expenses implements Serializable
     private double sharedIncome;
     private double[] sponsers;
     private int weeklySponser;
+    
+    private long sharedIncomeCount;
+    private double[] totalExpenses;
+    
     public Expenses(double[] expenses)
     {
-	sharedIncome = 2000000;
+    	totalExpenses = new double[expenses.length];
+	sharedIncome = 2380952;
 	weeklyExpenses = new double[expenses.length];
 	for(int i = 0; i < expenses.length; i++)
 	{
@@ -26,9 +31,10 @@ public class Expenses implements Serializable
 	for(int i = 0; i < weeklyExpenses.length; i++)
 	{
 	    retVal -= weeklyExpenses[i];
+	    totalExpenses[i] += weeklyExpenses[i];
 	}
 	retVal += sharedIncome + weeklySponser;
-	
+	sharedIncomeCount += sharedIncome;
 	return retVal;
     }
 
@@ -37,7 +43,7 @@ public class Expenses implements Serializable
 	this.sponsers = arr;
 	
     }
-
+    private int homeGameMoneyEarned = 0;
     public int homeGameOccurred(int fianance)
     {
 	int retVal = fianance;
@@ -46,14 +52,35 @@ public class Expenses implements Serializable
 	    for(int i = 0; i < sponsers.length; i++)
 	    {
 		retVal += sponsers[i];
+		homeGameMoneyEarned += sponsers[i];
 	    }
 	}
 	return retVal;
     }
-
+    public int getHomeMoneyEarned()
+    {
+    	int retVal = homeGameMoneyEarned;
+    	homeGameMoneyEarned = 0;
+    	return retVal;
+    }
     public void setWeeklySponser(int i)
     {
 	weeklySponser = i;
 	
     }
+    public int getWeeklySponser()
+    {
+    	return weeklySponser;
+    }
+
+	public double getSharedRevenue()
+	{
+		return sharedIncomeCount;
+	}
+
+	public double[] getTotalExpenses()
+	{
+		return totalExpenses;
+	}
+    
 }

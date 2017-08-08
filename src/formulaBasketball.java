@@ -115,10 +115,10 @@ public class formulaBasketball
 	}
 	private static void doSetup()
 	{
-	    
-		
-		
-		
+
+
+
+
 		ArrayList<DoubleDoubles> averages = new ArrayList<DoubleDoubles>();
 		for(int i = 0; i < create.size(); i++)
 		{
@@ -3009,7 +3009,7 @@ public class formulaBasketball
 		writer.println();
 
 		startingGame = 1;
-		
+
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
 		startingGame++;
@@ -4618,11 +4618,52 @@ public class formulaBasketball
 
 	private static void printFianances()
 	{
-		for(int i = 0; i < create.size(); i++)
-		{
-			System.out.println(create.getTeam(i).toString() + " fiances: " + create.getTeam(i).getFianances());
+		PrintWriter tempWriter = null;
+		try {
+			tempWriter = new PrintWriter("Fianances.csv", "UTF-8");
+			
 		}
-
+		catch (FileNotFoundException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (UnsupportedEncodingException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		finally
+		{
+			
+			tempWriter.println("Team Name,Ticket Sales,Concession Sales,Shared Revenue,Sponsor Income,Merchandise/Licensing,Player Contracts,Staff Contracts,Stadium Maintenance,Travel Costs,Current Money");
+			for(int i = 0; i < create.size(); i++)
+			{
+				StringBuilder temp = new StringBuilder();
+				double[] tempIncome = create.getTeam(i).getTotalIncomes();
+				double[] tempExpenses = create.getTeam(i).getTotalExpenses();
+				long[] totalIncome = new long[tempIncome.length];
+				long[] totalExpenses = new long[tempExpenses.length];
+				
+				
+				temp.append(create.getTeam(i).toString());
+				for(int j = 0; j < totalIncome.length; j++)
+				{
+					totalIncome[j] = Math.round(tempIncome[j]);
+					temp.append("," + totalIncome[j]);
+				}
+				temp.append("," + create.getTeam(i).getSeasonMerchandise());
+				for(int j = 0; j < totalExpenses.length; j++)
+				{
+					totalExpenses[j] = Math.round(tempExpenses[j]);
+					temp.append("," + totalExpenses[j]);
+				}
+				temp.append("," + create.getTeam(i).getTravelCosts());
+				temp.append("," + create.getTeam(i).getFianances());
+				tempWriter.println(temp.toString());
+				
+			}
+		}
+		tempWriter.close();
 
 	}
 	private static void doWeeklyFianances()
@@ -4868,13 +4909,14 @@ public class formulaBasketball
 			create.getTeam(i).addPointsAgainst(newGame.getHomeTeamScore());
 
 			attendance temp = create.getTeam(j).getStadium().getAttendance(create.getTeam(j),create.getTeam(i), false);
-			create.getTeam(j).setFianances((int)temp.income);
+			create.getTeam(j).setFianances((int)temp.income, false);
 			attendance[] concessions = create.getTeam(j).getStadium().getConcessions(temp);
 			for(int k = 0; k < concessions.length;k++)
 			{
-			    create.getTeam(j).setFianances((int)concessions[k].income);
+				create.getTeam(j).setFianances((int)concessions[k].income, true);
 			}
 			create.getTeam(j).homeGameOccurred();
+			create.getTeam(i).awayGameOccurred(i, j);
 			if(b)
 			{
 				PrintWriter writer = new PrintWriter("Game " + (startingGame-1) + " - " + create.getTeam(i).toString() + " - " + create.getTeam(j).toString() + " box score.txt", "UTF-8");
