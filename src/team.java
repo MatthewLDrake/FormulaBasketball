@@ -357,8 +357,9 @@ public class team implements Serializable, Comparable<team>
 	}
 	public void doExpenses()
 	{
-		totalIncome[3] += currentSponsers + expenses.getWeeklySponser() + expenses.getSharedRevenue() - weeklyTravel + merchandise.getWeeklyRevenue();
+		totalIncome[3] += currentSponsers + expenses.getWeeklySponser();
 		fianance = expenses.chargeExpenses(fianance, currentSponsers);
+		fianance +=  merchandise.getWeeklyRevenue()- weeklyTravel; 
 		currentSponsers = 0;
 		seasonMerchandiseRevenue += merchandise.getWeeklyRevenue();
 		weeklyTravel = 0;

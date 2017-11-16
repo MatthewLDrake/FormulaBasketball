@@ -1,6 +1,11 @@
+import java.io.Serializable;
 
-public class Concessions
+public class Concessions implements Serializable
 {
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
     private String foodType, drinkType;
     private double foodPrice, drinkPrice;
     public Concessions(String foodType, double foodPrice, String drinkType, double drinkPrice)

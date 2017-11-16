@@ -1,7 +1,12 @@
+import java.io.Serializable;
 import java.util.Random;
 
-public class Merchandise
+public class Merchandise implements Serializable
 {
+	/**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
 	private int weeklyRevenue;
 	public Merchandise()
 	{

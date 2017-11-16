@@ -24,7 +24,7 @@ public class formulaBasketball
 	private static boolean writeGames;
 	public static void main(String[] args)
 	{
-		writeGames = false;
+		writeGames = true;
 		StringUtils = new StringUtils();
 		boolean loadSave = false;
 
@@ -3008,11 +3008,11 @@ public class formulaBasketball
 	{
 		writer.println();
 
-		startingGame = 1;
+		startingGame = 69;
 
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,30, 0);
 		executeGame(false,31, 29);
 		executeGame(false,1, 28);
@@ -3031,7 +3031,7 @@ public class formulaBasketball
 		executeGame(false,14, 15);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,13, 0);
 		executeGame(false,12, 14);
 		executeGame(false,11, 15);
@@ -3050,7 +3050,7 @@ public class formulaBasketball
 		executeGame(false,29, 28);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 27);
 		executeGame(false,28, 26);
 		executeGame(false,29, 25);
@@ -3069,7 +3069,7 @@ public class formulaBasketball
 		executeGame(false,11, 12);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,23, 0);
 		executeGame(false,22, 24);
 		executeGame(false,21, 25);
@@ -3088,7 +3088,7 @@ public class formulaBasketball
 		executeGame(false,8, 7);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 12);
 		executeGame(false,11, 13);
 		executeGame(false,10, 14);
@@ -3107,7 +3107,7 @@ public class formulaBasketball
 		executeGame(false,28, 27);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,20, 0);
 		executeGame(false,21, 19);
 		executeGame(false,22, 18);
@@ -3126,7 +3126,7 @@ public class formulaBasketball
 		executeGame(false,4, 5);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,1, 0);
 		executeGame(false,31, 2);
 		executeGame(false,30, 3);
@@ -3145,7 +3145,7 @@ public class formulaBasketball
 		executeGame(false,17, 16);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,31, 24);
 		executeGame(false,23, 25);
 		executeGame(false,22, 26);
@@ -3164,7 +3164,7 @@ public class formulaBasketball
 		executeGame(false,14, 15);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,15, 0);
 		executeGame(false,14, 16);
 		executeGame(false,13, 17);
@@ -3183,7 +3183,7 @@ public class formulaBasketball
 		executeGame(false,31, 30);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 7);
 		executeGame(false,8, 6);
 		executeGame(false,9, 5);
@@ -3202,7 +3202,7 @@ public class formulaBasketball
 		executeGame(false,22, 23);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 29);
 		executeGame(false,30, 28);
 		executeGame(false,31, 27);
@@ -3221,7 +3221,7 @@ public class formulaBasketball
 		executeGame(false,13, 14);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 23);
 		executeGame(false,24, 22);
 		executeGame(false,25, 21);
@@ -3240,7 +3240,7 @@ public class formulaBasketball
 		executeGame(false,7, 8);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 7);
 		executeGame(false,1, 6);
 		executeGame(false,2, 5);
@@ -3259,7 +3259,7 @@ public class formulaBasketball
 		executeGame(false,20, 19);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,31, 26);
 		executeGame(false,25, 27);
 		executeGame(false,24, 28);
@@ -3278,7 +3278,7 @@ public class formulaBasketball
 		executeGame(false,12, 13);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,31, 30);
 		executeGame(false,29, 16);
 		executeGame(false,28, 17);
@@ -3297,7 +3297,7 @@ public class formulaBasketball
 		executeGame(false,8, 9);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,19, 31);
 		executeGame(false,18, 20);
 		executeGame(false,17, 21);
@@ -3316,7 +3316,7 @@ public class formulaBasketball
 		executeGame(false,4, 5);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,31, 28);
 		executeGame(false,27, 29);
 		executeGame(false,26, 30);
@@ -3335,7 +3335,7 @@ public class formulaBasketball
 		executeGame(false,10, 11);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,3, 0);
 		executeGame(false,2, 4);
 		executeGame(false,1, 5);
@@ -3354,7 +3354,7 @@ public class formulaBasketball
 		executeGame(false,19, 18);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,6, 0);
 		executeGame(false,7, 5);
 		executeGame(false,1, 4);
@@ -3373,7 +3373,7 @@ public class formulaBasketball
 		executeGame(false,20, 21);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 9);
 		executeGame(false,10, 8);
 		executeGame(false,11, 7);
@@ -3392,7 +3392,7 @@ public class formulaBasketball
 		executeGame(false,24, 25);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 10);
 		executeGame(false,9, 11);
 		executeGame(false,8, 12);
@@ -3411,7 +3411,7 @@ public class formulaBasketball
 		executeGame(false,26, 25);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,1, 0);
 		executeGame(false,2, 7);
 		executeGame(false,3, 6);
@@ -3430,7 +3430,7 @@ public class formulaBasketball
 		executeGame(false,18, 19);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,7, 0);
 		executeGame(false,6, 8);
 		executeGame(false,5, 9);
@@ -3449,7 +3449,7 @@ public class formulaBasketball
 		executeGame(false,23, 22);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 16);
 		executeGame(false,15, 17);
 		executeGame(false,14, 18);
@@ -3468,7 +3468,7 @@ public class formulaBasketball
 		executeGame(false,1, 31);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,6, 0);
 		executeGame(false,7, 5);
 		executeGame(false,8, 4);
@@ -3487,7 +3487,7 @@ public class formulaBasketball
 		executeGame(false,21, 22);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,17, 31);
 		executeGame(false,16, 18);
 		executeGame(false,30, 19);
@@ -3506,7 +3506,7 @@ public class formulaBasketball
 		executeGame(false,6, 7);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 5);
 		executeGame(false,6, 4);
 		executeGame(false,7, 3);
@@ -3525,7 +3525,7 @@ public class formulaBasketball
 		executeGame(false,20, 21);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 31);
 		executeGame(false,1, 30);
 		executeGame(false,2, 29);
@@ -3544,7 +3544,7 @@ public class formulaBasketball
 		executeGame(false,15, 16);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 30);
 		executeGame(false,29, 31);
 		executeGame(false,28, 1);
@@ -3563,7 +3563,7 @@ public class formulaBasketball
 		executeGame(false,15, 14);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 15);
 		executeGame(false,16, 14);
 		executeGame(false,17, 13);
@@ -3582,7 +3582,7 @@ public class formulaBasketball
 		executeGame(false,30, 31);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,21, 31);
 		executeGame(false,20, 22);
 		executeGame(false,19, 23);
@@ -3601,7 +3601,7 @@ public class formulaBasketball
 		executeGame(false,2, 3);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 1);
 		executeGame(false,2, 31);
 		executeGame(false,3, 30);
@@ -3620,7 +3620,7 @@ public class formulaBasketball
 		executeGame(false,16, 17);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,12, 0);
 		executeGame(false,13, 11);
 		executeGame(false,14, 10);
@@ -3639,7 +3639,7 @@ public class formulaBasketball
 		executeGame(false,27, 28);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 20);
 		executeGame(false,19, 21);
 		executeGame(false,18, 22);
@@ -3658,7 +3658,7 @@ public class formulaBasketball
 		executeGame(false,5, 4);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,8, 0);
 		executeGame(false,9, 7);
 		executeGame(false,10, 6);
@@ -3677,7 +3677,7 @@ public class formulaBasketball
 		executeGame(false,23, 24);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 22);
 		executeGame(false,21, 23);
 		executeGame(false,20, 24);
@@ -3696,7 +3696,7 @@ public class formulaBasketball
 		executeGame(false,7, 6);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,19, 0);
 		executeGame(false,18, 20);
 		executeGame(false,17, 21);
@@ -3715,7 +3715,7 @@ public class formulaBasketball
 		executeGame(false,4, 3);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 3);
 		executeGame(false,4, 2);
 		executeGame(false,5, 1);
@@ -3734,7 +3734,7 @@ public class formulaBasketball
 		executeGame(false,16, 17);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,31, 22);
 		executeGame(false,21, 23);
 		executeGame(false,20, 24);
@@ -3753,7 +3753,7 @@ public class formulaBasketball
 		executeGame(false,1, 2);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,27, 0);
 		executeGame(false,26, 28);
 		executeGame(false,25, 29);
@@ -3772,7 +3772,7 @@ public class formulaBasketball
 		executeGame(false,12, 11);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,16, 0);
 		executeGame(false,17, 15);
 		executeGame(false,18, 14);
@@ -3791,7 +3791,7 @@ public class formulaBasketball
 		executeGame(false,31, 1);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 6);
 		executeGame(false,5, 7);
 		executeGame(false,4, 8);
@@ -3810,7 +3810,7 @@ public class formulaBasketball
 		executeGame(false,22, 21);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 3);
 		executeGame(false,4, 2);
 		executeGame(false,5, 1);
@@ -3829,7 +3829,7 @@ public class formulaBasketball
 		executeGame(false,18, 19);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,18, 0);
 		executeGame(false,19, 17);
 		executeGame(false,20, 16);
@@ -3848,7 +3848,7 @@ public class formulaBasketball
 		executeGame(false,2, 3);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,22, 0);
 		executeGame(false,23, 21);
 		executeGame(false,24, 20);
@@ -3867,7 +3867,7 @@ public class formulaBasketball
 		executeGame(false,6, 7);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,25, 0);
 		executeGame(false,24, 26);
 		executeGame(false,23, 27);
@@ -3886,7 +3886,7 @@ public class formulaBasketball
 		executeGame(false,10, 9);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,10, 0);
 		executeGame(false,11, 9);
 		executeGame(false,12, 8);
@@ -3905,7 +3905,7 @@ public class formulaBasketball
 		executeGame(false,25, 26);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 17);
 		executeGame(false,18, 16);
 		executeGame(false,19, 15);
@@ -3924,7 +3924,7 @@ public class formulaBasketball
 		executeGame(false,1, 2);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 21);
 		executeGame(false,22, 20);
 		executeGame(false,23, 19);
@@ -3943,7 +3943,7 @@ public class formulaBasketball
 		executeGame(false,5, 6);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,29, 31);
 		executeGame(false,28, 30);
 		executeGame(false,27, 16);
@@ -3962,7 +3962,7 @@ public class formulaBasketball
 		executeGame(false,9, 10);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 4);
 		executeGame(false,3, 5);
 		executeGame(false,2, 6);
@@ -3981,7 +3981,7 @@ public class formulaBasketball
 		executeGame(false,20, 19);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 28);
 		executeGame(false,27, 29);
 		executeGame(false,26, 30);
@@ -4000,7 +4000,7 @@ public class formulaBasketball
 		executeGame(false,13, 12);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 24);
 		executeGame(false,23, 25);
 		executeGame(false,22, 26);
@@ -4019,7 +4019,7 @@ public class formulaBasketball
 		executeGame(false,9, 8);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,2, 0);
 		executeGame(false,3, 1);
 		executeGame(false,4, 7);
@@ -4038,7 +4038,7 @@ public class formulaBasketball
 		executeGame(false,18, 17);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 8);
 		executeGame(false,7, 9);
 		executeGame(false,6, 10);
@@ -4057,7 +4057,7 @@ public class formulaBasketball
 		executeGame(false,24, 23);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 11);
 		executeGame(false,12, 10);
 		executeGame(false,13, 9);
@@ -4076,7 +4076,7 @@ public class formulaBasketball
 		executeGame(false,26, 27);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,31, 20);
 		executeGame(false,19, 21);
 		executeGame(false,18, 22);
@@ -4095,7 +4095,7 @@ public class formulaBasketball
 		executeGame(false,3, 4);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 13);
 		executeGame(false,14, 12);
 		executeGame(false,15, 11);
@@ -4114,7 +4114,7 @@ public class formulaBasketball
 		executeGame(false,28, 29);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,17, 0);
 		executeGame(false,16, 18);
 		executeGame(false,15, 19);
@@ -4133,7 +4133,7 @@ public class formulaBasketball
 		executeGame(false,2, 1);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 25);
 		executeGame(false,26, 24);
 		executeGame(false,27, 23);
@@ -4152,7 +4152,7 @@ public class formulaBasketball
 		executeGame(false,9, 10);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,31, 18);
 		executeGame(false,17, 19);
 		executeGame(false,16, 20);
@@ -4171,7 +4171,7 @@ public class formulaBasketball
 		executeGame(false,5, 6);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,29, 0);
 		executeGame(false,28, 30);
 		executeGame(false,27, 31);
@@ -4190,7 +4190,7 @@ public class formulaBasketball
 		executeGame(false,14, 13);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,4, 0);
 		executeGame(false,5, 3);
 		executeGame(false,6, 2);
@@ -4209,7 +4209,7 @@ public class formulaBasketball
 		executeGame(false,16, 22);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,5, 0);
 		executeGame(false,4, 6);
 		executeGame(false,3, 7);
@@ -4228,7 +4228,7 @@ public class formulaBasketball
 		executeGame(false,21, 20);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,2, 0);
 		executeGame(false,3, 1);
 		executeGame(false,4, 31);
@@ -4247,7 +4247,7 @@ public class formulaBasketball
 		executeGame(false,17, 18);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,21, 0);
 		executeGame(false,20, 22);
 		executeGame(false,19, 23);
@@ -4266,7 +4266,7 @@ public class formulaBasketball
 		executeGame(false,6, 5);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 14);
 		executeGame(false,13, 15);
 		executeGame(false,12, 16);
@@ -4285,7 +4285,7 @@ public class formulaBasketball
 		executeGame(false,30, 29);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,14, 0);
 		executeGame(false,15, 13);
 		executeGame(false,16, 12);
@@ -4304,7 +4304,7 @@ public class formulaBasketball
 		executeGame(false,29, 30);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,27, 31);
 		executeGame(false,26, 28);
 		executeGame(false,25, 29);
@@ -4323,7 +4323,7 @@ public class formulaBasketball
 		executeGame(false,11, 12);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,25, 31);
 		executeGame(false,24, 26);
 		executeGame(false,23, 27);
@@ -4342,7 +4342,7 @@ public class formulaBasketball
 		executeGame(false,13, 14);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,31, 16);
 		executeGame(false,30, 17);
 		executeGame(false,29, 18);
@@ -4361,7 +4361,7 @@ public class formulaBasketball
 		executeGame(false,7, 8);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,31, 0);
 		executeGame(false,30, 1);
 		executeGame(false,29, 2);
@@ -4380,7 +4380,7 @@ public class formulaBasketball
 		executeGame(false,16, 15);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,4, 0);
 		executeGame(false,5, 3);
 		executeGame(false,6, 2);
@@ -4399,7 +4399,7 @@ public class formulaBasketball
 		executeGame(false,19, 20);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 2);
 		executeGame(false,1, 3);
 		executeGame(false,31, 4);
@@ -4418,7 +4418,7 @@ public class formulaBasketball
 		executeGame(false,18, 17);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,11, 0);
 		executeGame(false,10, 12);
 		executeGame(false,9, 13);
@@ -4437,7 +4437,7 @@ public class formulaBasketball
 		executeGame(false,27, 26);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,9, 0);
 		executeGame(false,8, 10);
 		executeGame(false,7, 11);
@@ -4456,7 +4456,7 @@ public class formulaBasketball
 		executeGame(false,25, 24);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,24, 0);
 		executeGame(false,25, 23);
 		executeGame(false,26, 22);
@@ -4475,7 +4475,7 @@ public class formulaBasketball
 		executeGame(false,8, 9);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,28, 0);
 		executeGame(false,29, 27);
 		executeGame(false,30, 26);
@@ -4494,7 +4494,7 @@ public class formulaBasketball
 		executeGame(false,12, 13);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,23, 31);
 		executeGame(false,22, 24);
 		executeGame(false,21, 25);
@@ -4513,7 +4513,7 @@ public class formulaBasketball
 		executeGame(false,15, 1);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 19);
 		executeGame(false,20, 18);
 		executeGame(false,21, 17);
@@ -4532,7 +4532,7 @@ public class formulaBasketball
 		executeGame(false,3, 4);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,26, 0);
 		executeGame(false,27, 25);
 		executeGame(false,28, 24);
@@ -4551,7 +4551,7 @@ public class formulaBasketball
 		executeGame(false,10, 11);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 5);
 		executeGame(false,6, 4);
 		executeGame(false,7, 3);
@@ -4570,7 +4570,7 @@ public class formulaBasketball
 		executeGame(false,22, 21);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 18);
 		executeGame(false,17, 19);
 		executeGame(false,16, 20);
@@ -4589,7 +4589,7 @@ public class formulaBasketball
 		executeGame(false,3, 2);
 		if(gameWriter != null)gameWriter.writeLines();gameResults.println("Game " +  startingGame + ",Home,Score,Away,Score");
 		writer.println(); if(writeGames)gameWriter = new gameWriter(startingGame); else gameWriter = null; doWeeklyFianances();
-		startingGame++;
+		startingGame++;System.out.println(startingGame + "'s Games");
 		executeGame(false,0, 26);
 		executeGame(false,25, 27);
 		executeGame(false,24, 28);
@@ -4606,6 +4606,10 @@ public class formulaBasketball
 		executeGame(false,13, 8);
 		executeGame(false,12, 9);
 		executeGame(false,11, 10);
+
+
+
+
 
 		if(gameWriter != null)gameWriter.writeLines(); 
 
@@ -4849,15 +4853,15 @@ public class formulaBasketball
 				create.getTeam(j).setModifier(new None());
 			}
 		}
-		if (i == 26)
-		{
-			create.getTeam(i).setModifier(new gettingHot());
-		}
+		//if (i == 26)
+		//{
+			//create.getTeam(i).setModifier(new gettingHot());
+		//}
 
-		else if(j == 26)
-		{
-			create.getTeam(j).setModifier(new gettingHot());
-		}
+		//else if(j == 26)
+		//{
+			//create.getTeam(j).setModifier(new gettingHot());
+		//}
 		create.getTeam(i).addModifier(new HomeTeam());
 		create.getTeam(i).addModifier(create.getTeam(i).getCoachModifier());
 		game newGame = new game(gameWriter, create.getTeam(i), create.getTeam(j));
@@ -4908,15 +4912,15 @@ public class formulaBasketball
 			create.getTeam(j).addPointsAgainst(newGame.getAwayTeamScore());
 			create.getTeam(i).addPointsAgainst(newGame.getHomeTeamScore());
 
-			attendance temp = create.getTeam(j).getStadium().getAttendance(create.getTeam(j),create.getTeam(i), false);
-			create.getTeam(j).setFianances((int)temp.income, false);
-			attendance[] concessions = create.getTeam(j).getStadium().getConcessions(temp);
+			attendance temp = create.getTeam(i).getStadium().getAttendance(create.getTeam(i),create.getTeam(j), false);
+			create.getTeam(i).setFianances((int)temp.income, false);
+			attendance[] concessions = create.getTeam(i).getStadium().getConcessions(temp);
 			for(int k = 0; k < concessions.length;k++)
 			{
-				create.getTeam(j).setFianances((int)concessions[k].income, true);
+				create.getTeam(i).setFianances((int)concessions[k].income, true);
 			}
-			create.getTeam(j).homeGameOccurred();
-			create.getTeam(i).awayGameOccurred(i, j);
+			create.getTeam(i).homeGameOccurred();
+			create.getTeam(j).awayGameOccurred(j, i);
 			if(b)
 			{
 				PrintWriter writer = new PrintWriter("Game " + (startingGame-1) + " - " + create.getTeam(i).toString() + " - " + create.getTeam(j).toString() + " box score.txt", "UTF-8");
